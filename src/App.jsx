@@ -47,10 +47,11 @@ const cvData = {
       location: "Auckland",
       dates: "10/2024 - Present",
       description: [
-        "Organised and scheduled tradespeople for repairs, landscaping, and maintenance.",
-        "Maintained detailed inventory and records for multiple properties.",
-        "Acted as a key point of contact for clients and tenants, resolving issues efficiently.",
-        "Gained experience in managing rental, Airbnb, and auction properties."
+        "Managed a diverse portfolio encompassing eight properties across New Zealand and the Pacific Islands, including: ",
+        "4 commercial buildings and 1 residential rental property in Auckland region, 2 international Airbnb properties.",
+        "Maintained detailed inventory and records for the multi-location portfolio, ensuring compliance and accurate asset tracking.",
+        "Organised and scheduled a comprehensive network of tradespeople for timely and efficient repairs, landscaping, and maintenance.",
+        
       ]
     },
     {
