@@ -16,7 +16,6 @@ const cvData = {
   ],
   skills: {
     technical: [
-      "AI Prompting",
       "Web Development: HTML5, CSS3, JavaScript, React.js, Node.js, Express.js",
       "Databases: MongoDB, MySQL",
       "Tools: Git, GitHub, VS Code",
