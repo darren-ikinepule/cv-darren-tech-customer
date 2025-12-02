@@ -46,7 +46,7 @@ const cvData = {
       location: "Auckland",
       dates: "10/2024 - Present",
       description: [
-        "Managed a diverse portfolio encompassing eight properties across New Zealand and the Pacific Islands, including: ",
+        "Managed a diverse portfolio encompassing 7 properties across New Zealand and the Pacific Islands, including: ",
         "4 commercial buildings and 1 residential rental property in Auckland region, 2 international Airbnb properties.",
         "Maintained detailed inventory and records for the multi-location portfolio, ensuring compliance and accurate asset tracking.",
         "Organised and scheduled a comprehensive network of tradespeople for timely and efficient repairs, landscaping, and maintenance.",
@@ -76,7 +76,7 @@ const cvData = {
       role: "Executive Chef",
       company: "Chaweng Blue Lagoon Resort",
       location: "Thailand",
-      dates: "01/2005 - 01/2008",
+      dates: "01/2005 - 01/2015",
       description: [
         "Led a team of 15+ staff through training and performance management programs.",
         "Achieved 95%+ guest satisfaction through systematic quality improvement.",
