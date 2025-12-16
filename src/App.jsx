@@ -1,11 +1,12 @@
-import React from 'react';
-import TechCv from './components/TechCv';
-
+import React from "react";
+import TechCv from "./components/TechCv";
 
 const App = () => {
-  return <TechCv />;
+  return (
+    <>
+      <TechCv />;
+    </>
+  );
 };
 
 export default App;
-
-
