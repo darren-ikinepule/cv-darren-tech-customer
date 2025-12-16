@@ -1,10 +1,12 @@
 import React from "react";
-import TechCv from "./components/TechCv";
+// import TechCv from "./components/TechCv";
+import ForkLift from "./components/ForkLift";
 
 const App = () => {
   return (
     <>
-      <TechCv />;
+    <ForkLift/>
+      {/* <TechCv/>; */}
     </>
   );
 };
