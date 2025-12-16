@@ -5,42 +5,46 @@ import React from 'react';
 const cvData = {
   personal: {
     name: "Darren Ikinepule",
-    title: "Client Support & Web Development",
+    title: "Logistics & Warehouse Support Specialist",
     email: "darrenikinepule@outlook.co.nz",
     phone: "0204339983",
     location: "Auckland 1072",
   },
   summary: [
-    "While my background is in hospitality, where I spent years as a chef, I'm now passionate about moving into the tech and client support space. Working in fast paced kitchens taught me to stay calm under pressure, solve problems quickly, and communicate clearly with a team. Skills I know are crucial in client support.",
-    "Living in Thailand and extensive travel have given me adaptability and a broad perspective, helping me connect with people from different backgrounds. I'm excited about web development; it combines my love of problem solving with technology. I'm eager to bring my work ethic, attention to detail, and enthusiasm to a team while continuing to grow in this industry."
+    "Reliable and energetic professional with a strong work ethic, transitioning from high-volume hospitality management into logistics and warehouse support. Proven ability to remain calm under pressure, solve problems quickly, and maintain high standards in fast-paced environments. Committed to accuracy, safety, and providing excellent service during the busy festive season."
   ],
   skills: {
     technical: [
-      "Certified Forklift Operator (Counter Balance LPG, Reach Elec, Stock Picker Elec, Pallet Truck Elec)",
-      "Web Development: HTML5, CSS3, JavaScript, React.js, Node.js, Express.js",
-      "Databases: MongoDB, MySQL",
-      "Tools: Git, GitHub, VS Code",
-      "Other: Responsive Web Design, REST APIs, Agile Collaboration",
-      "AI Prompting"
+      "Certified Forklift Operator: Counter Balance (LPG), Reach Electric, Stock Picker Electric, Pallet Truck Electric",
+      "Inventory & Logistics: Detailed inventory records and accurate asset tracking for multi-location portfolios",
+      "Customer Service: Strong interpersonal skills with professional feedback resolution",
+      "Full Class 1 NZ Driver's Licence",
+      "Safety & Compliance: Committed to accuracy and safety standards"
     ],
     core: [
-      { category: "Customer Service & Interpersonal Skills", items: ["Excellent communication and interpersonal skills", "Strong problem solving abilities", "Attention to detail", "Initiative and independent work ethic", "Team collaboration"] },
-      { category: "Management Skills", items: ["Team leadership", "Staff scheduling", "Performance management"] },
+      { category: "Key Strengths", items: ["Reliable and energetic work ethic", "Ability to remain calm under pressure", "Quick problem-solving skills", "High standard maintenance in fast-paced environments", "Team collaboration and leadership"] },
+      { category: "Professional Qualities", items: ["Punctual and organized", "Self-disciplined", "Detail-oriented", "Safety-conscious", "Customer-focused"] },
     ],
-    personal: ["A Full Class 1 NZ Driver's Licence", "A strong team ethic and proactive attitude", "Reliable, punctual, organised, and self disciplined", "Completed an intensive programme combining technical learning with professional and personal development."],
+    personal: ["Full Class 1 NZ Driver's Licence", "Strong team ethic and proactive attitude", "Reliable, punctual, organised, and self disciplined", "Committed to accuracy, safety, and excellent service"],
   },
-  education: [ // NEW EDUCATION SECTION
+  education: [
     {
-      role: "Career Transition & Skills Development",
-      company: "Take2 Programme Software Development and Professional Skills",
+      role: "Forklift Certification",
+      company: "Certified Operator",
       location: "Auckland",
-      dates: "2024 - Present",
+      dates: "2024",
       description: [
-        "A full time, project based learning programme designed to help learners gain industry relevant technical skills, develop professional habits, and prepare for meaningful employment.",
-        "Hands on coding and web development projects",
-        "Built an App: Fuel vs Fire demonstrating frontend and backend capabilities.",
+        "Counter Balance (LPG), Reach Electric, Stock Picker Electric, and Pallet Truck Electric",
       ],
-      isHighlight: true, // Visually highlight this section
+    },
+    {
+      role: "Take2 Programme",
+      company: "Software Development and Professional Skills",
+      location: "Auckland",
+      dates: "2024",
+      description: [
+        "Focused on developing professional habits, work ethic, and technical learning",
+      ],
     },
   ],
   experience: [
@@ -48,71 +52,42 @@ const cvData = {
       role: "Property Manager",
       company: "Gardenia Trust LTD",
       location: "Auckland",
-      dates: "10/2024 - Present",
+      dates: "10/2024 – Present",
       description: [
-        "Managed a diverse portfolio encompassing 7 properties across New Zealand and the Pacific Islands, including: ",
-        "4 commercial buildings and 1 residential rental property in Auckland region, 2 international Airbnb properties.",
-        "Maintained detailed **inventory and records** for the multi-location portfolio, ensuring compliance and **accurate asset tracking**.",
-        "Organised and **scheduled a comprehensive network of tradespeople** for timely and efficient repairs, landscaping, and maintenance.",
-        
-      ]
+        "Maintained detailed inventory and records for a diverse portfolio of 7 properties",
+        "Ensured accurate asset tracking and compliance across multiple locations",
+        "Organized and scheduled a comprehensive network of tradespeople for efficient repairs and maintenance"
+      ],
+      isHighlight: true,
     },
     {
       role: "Head Chef",
       company: "Kohuora Cafe",
       location: "Auckland",
-      dates: "05/2018 - 10/2022",
+      dates: "05/2018 – 10/2022",
       description: [
-        "Developed and refined the entire menu, driving product innovation that contributed to an 80% increase in daily lunch covers and significantly improved customer retention, while maintaining **high-volume, quality-driven production standards**.",
+        "Managed high-volume, quality-driven production standards in a fast-paced environment",
+        "Oversaw daily operations and staff to ensure consistent quality and customer retention"
       ]
     },
     {
       role: "Gourmet Production Chef",
       company: "Eat My Lunch",
       location: "Auckland",
-      dates: "05/2016 - 05/2018",
+      dates: "05/2016 – 05/2018",
       description: [
-        "Maintained **99%+ quality standards through systematic quality control processes** (GMP/HACCP relevant experience).",
-        "Resolved customer feedback and special requests efficiently and professionally.",
+        "Maintained 99%+ quality standards through systematic quality control processes",
+        "Resolved customer feedback and special requests efficiently and professionally"
       ]
     },
     {
-      role: "Executive Chef",
-      company: "Chaweng Blue Lagoon Resort",
-      location: "Thailand",
-      dates: "01/2005 - 01/2015",
+      role: "Executive & Sous Chef",
+      company: "Various Resorts & Hotels",
+      location: "Multiple Locations",
+      dates: "1995 – 2015",
       description: [
-        "Led a team of 15+ staff through training and performance management programs.",
-        "Achieved 95%+ guest satisfaction through systematic quality improvement.",
-      ]
-    },
-    {
-      role: "Executive Sous Chef",
-      company: "Impiana Resort And Spa",
-      location: "Koh Samui, Thailand",
-      dates: "06/2002 - 06/2004",
-      description: [
-        "Managed a high volume of operational tasks with strong multi-tasking skills.",
-        "Supported and improved internal processes to **increase kitchen efficiency and reduce food waste (process optimization)**.",
-      ]
-    },
-    {
-      role: "Sous Chef",
-      company: "Auckland Club",
-      location: "Auckland",
-      dates: "01/2000 - 01/2001",
-      description: [
-        "Managed private club catering and special event dining experiences.",
-        "Developed innovative menu items, increasing guest return rates.",
-      ]
-    },
-    {
-      role: "Sous Chef",
-      company: "Hyatt Hotel Auckland",
-      location: "Auckland",
-      dates: "11/1995 - 01/2000",
-      description: [
-        "Selected to represent Hyatt Auckland internationally (Saudi Arabia, Taipei, Singapore), showcasing New Zealand cuisine and culinary standards.",
+        "Managed teams of 15+ staff and oversaw complex operational tasks",
+        "Optimized internal processes to increase efficiency and reduce waste"
       ]
     },
   ],
