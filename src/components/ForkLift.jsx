@@ -188,169 +188,189 @@ const ExperienceItem = ({ role, company, location, dates, description, isHighlig
 // --- Main App Component ---
 
 const ForkLift = () => {
-  // Add print styles to limit to 2 pages strictly
+  // Add print styles to strictly fit 2 pages
   React.useEffect(() => {
     const style = document.createElement('style');
     style.textContent = `
       @media print {
         * {
-          margin: 0;
-          padding: 0;
+          margin: 0 !important;
+          padding: 0 !important;
           box-sizing: border-box;
         }
-        body {
-          margin: 0.4in;
-          font-size: 10pt;
-          line-height: 1.2;
+        html, body {
+          margin: 0.25in !important;
+          padding: 0 !important;
+          font-size: 9pt !important;
+          line-height: 1.15 !important;
         }
         .forklift-cv {
-          max-height: 100%;
-          page-break-after: auto;
           background: white !important;
-        }
-        .forklift-cv * {
-          page-break-inside: avoid;
+          margin: 0 !important;
+          padding: 0 !important;
+          font-size: 9pt !important;
         }
         .forklift-cv .cv-container {
           box-shadow: none !important;
-          max-width: 100%;
+          max-width: 100% !important;
           background: white !important;
           border: none !important;
+          margin: 0 !important;
+          padding: 0 !important;
         }
         .forklift-cv .cv-wrapper {
-          margin: 0;
-          padding: 0;
+          margin: 0 !important;
+          padding: 0 !important;
         }
         .forklift-cv header {
-          padding: 6px 0 !important;
-          margin: 0 0 8px 0 !important;
+          padding: 4px 0 !important;
+          margin: 0 0 4px 0 !important;
           background: #374151 !important;
           color: white !important;
           border-radius: 0 !important;
           page-break-inside: avoid;
         }
         .forklift-cv header h1 {
-          font-size: 16pt !important;
-          margin: 2px 0 !important;
+          font-size: 14pt !important;
+          margin: 1px 0 !important;
           padding: 0 !important;
+          line-height: 1.1 !important;
         }
         .forklift-cv header p {
-          font-size: 10pt !important;
-          margin: 2px 0 !important;
+          font-size: 8.5pt !important;
+          margin: 1px 0 !important;
           padding: 0 !important;
+          line-height: 1.1 !important;
         }
         .forklift-cv main {
           padding: 0 !important;
           margin: 0 !important;
         }
-        .forklift-cv .summary-section,
-        .forklift-cv .skills-section,
-        .forklift-cv .education-section,
+        .forklift-cv .summary-section {
+          margin: 0 0 3px 0 !important;
+          padding: 0 !important;
+          page-break-inside: avoid;
+        }
+        .forklift-cv .skills-education-row {
+          display: flex !important;
+          gap: 8px !important;
+          margin: 0 0 3px 0 !important;
+          page-break-inside: avoid;
+        }
+        .forklift-cv .skills-section {
+          flex: 1 !important;
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+        .forklift-cv .education-section {
+          flex: 0.6 !important;
+          margin: 0 !important;
+          padding: 0 !important;
+        }
         .forklift-cv .work-history-section {
-          margin: 0 0 6px 0 !important;
+          margin: 0 !important;
           padding: 0 !important;
           page-break-inside: avoid;
         }
         .forklift-cv h2 {
-          font-size: 11pt !important;
-          font-weight: bold !important;
-          border-bottom: 1px solid #3b82f6 !important;
-          padding-bottom: 2px !important;
-          margin: 6px 0 4px 0 !important;
-        }
-        .forklift-cv h3 {
           font-size: 10pt !important;
           font-weight: bold !important;
-          margin: 4px 0 2px 0 !important;
+          border-bottom: 0.5pt solid #3b82f6 !important;
+          padding-bottom: 1px !important;
+          margin: 2px 0 2px 0 !important;
+          line-height: 1 !important;
+        }
+        .forklift-cv h3 {
+          font-size: 8.5pt !important;
+          font-weight: bold !important;
+          margin: 2px 0 1px 0 !important;
           padding: 0 !important;
+          line-height: 1 !important;
         }
         .forklift-cv p {
           margin: 0 !important;
           padding: 0 !important;
-          font-size: 10pt !important;
-          line-height: 1.2 !important;
+          font-size: 9pt !important;
+          line-height: 1.1 !important;
         }
         .forklift-cv .text-base {
-          font-size: 10pt !important;
-        }
-        .forklift-cv .text-lg {
-          font-size: 10pt !important;
-        }
-        .forklift-cv .text-sm {
           font-size: 9pt !important;
         }
+        .forklift-cv .text-lg {
+          font-size: 8.5pt !important;
+        }
+        .forklift-cv .text-sm {
+          font-size: 8pt !important;
+        }
         .forklift-cv .text-xl {
-          font-size: 11pt !important;
+          font-size: 10pt !important;
         }
         .forklift-cv .text-2xl {
-          font-size: 12pt !important;
+          font-size: 11pt !important;
         }
         .forklift-cv .text-4xl {
-          font-size: 14pt !important;
+          font-size: 13pt !important;
         }
-        .forklift-cv .experience-item,
-        .forklift-cv .education-item {
-          margin: 3px 0 !important;
-          padding: 2px 0 !important;
+        .forklift-cv .experience-item {
+          margin: 2px 0 !important;
+          padding: 1px 0 !important;
           page-break-inside: avoid;
           background: transparent !important;
           border: none !important;
           box-shadow: none !important;
         }
         .forklift-cv ul {
-          margin: 1px 0 1px 12px !important;
+          margin: 0 0 0 10px !important;
           padding: 0 !important;
           list-style: disc;
         }
         .forklift-cv li {
-          margin: 1px 0 !important;
+          margin: 0.5px 0 !important;
           padding: 0 !important;
-          font-size: 9.5pt !important;
-          line-height: 1.1 !important;
-        }
-        .forklift-cv .flex {
-          display: flex;
-        }
-        .forklift-cv .justify-between {
-          justify-content: space-between;
-        }
-        .forklift-cv .italic {
-          font-style: italic;
+          font-size: 8.5pt !important;
+          line-height: 1.05 !important;
         }
         .forklift-cv .space-y-3 {
           display: block;
         }
         .forklift-cv .space-y-3 > p {
-          margin: 2px 0 !important;
-          font-size: 9.5pt !important;
+          margin: 1px 0 !important;
+          font-size: 8.5pt !important;
+          line-height: 1.15 !important;
         }
         .forklift-cv .skills-grid {
           display: block !important;
+          margin: 0 !important;
+          padding: 0 !important;
         }
+        .forklift-cv .grid-cols-1,
         .forklift-cv .grid-cols-2 {
           display: block !important;
         }
+        .forklift-cv .gap-6 {
+          gap: 0 !important;
+        }
         .forklift-cv .mt-6 {
-          margin-top: 3px !important;
+          margin-top: 1px !important;
         }
         .forklift-cv .mt-4 {
-          margin-top: 2px !important;
+          margin-top: 1px !important;
         }
         .forklift-cv .mt-2 {
-          margin-top: 2px !important;
+          margin-top: 0px !important;
         }
         .forklift-cv .mb-6,
         .forklift-cv .mb-4,
         .forklift-cv .mb-2 {
-          margin-bottom: 2px !important;
+          margin-bottom: 1px !important;
+        }
+        .forklift-cv .mb-1 {
+          margin-bottom: 0px !important;
         }
         .forklift-cv .pt-6,
         .forklift-cv .pt-4,
         .forklift-cv .pt-2 {
-          padding-top: 2px !important;
-        }
-        .forklift-cv .gap-6 {
-          gap: 0 !important;
+          padding-top: 0px !important;
         }
         .forklift-cv .shadow-md,
         .forklift-cv .shadow-xl,
@@ -362,10 +382,28 @@ const ForkLift = () => {
           border-radius: 0 !important;
         }
         .forklift-cv .space-y-1 > * {
-          margin: 0.5px 0 !important;
+          margin: 0 0 !important;
         }
         .forklift-cv .space-y-0.5 > * {
-          margin: 0px 0 !important;
+          margin: 0 0 !important;
+        }
+        .forklift-cv .space-y-4 {
+          display: block !important;
+        }
+        .forklift-cv .space-y-4 > * {
+          margin-bottom: 1px !important;
+        }
+        .forklift-cv .flex {
+          display: flex !important;
+        }
+        .forklift-cv .justify-between {
+          justify-content: space-between !important;
+        }
+        .forklift-cv .items-start {
+          align-items: flex-start !important;
+        }
+        .forklift-cv .items-center {
+          align-items: center !important;
         }
       }
     `;
@@ -397,49 +435,52 @@ const ForkLift = () => {
               </div>
             </div>
 
-            {/* Skills Section */}
-            <div className="skills-section">
-              <SectionTitle title="Skills" icon="briefcase" />
-              
-              <div className="skills-grid grid grid-cols-1 md:grid-cols-2 gap-6">
-                {/* Technical Skills */}
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-700 mb-2">Technical Skills</h3>
-                  <TechnicalSkills skills={skills.technical} />
+            {/* Skills & Education Section (Side-by-side on print) */}
+            <div className="skills-education-row">
+              {/* Skills Section */}
+              <div className="skills-section">
+                <SectionTitle title="Skills" icon="briefcase" />
+                
+                <div className="skills-grid">
+                  {/* Technical Skills */}
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-700 mb-2">Technical</h3>
+                    <TechnicalSkills skills={skills.technical} />
 
-                  {/* General & Personal */}
-                  <div className="mt-6">
-                    <h3 className="text-lg font-semibold text-gray-700 mb-1">General & Personal</h3>
-                    <ul className="list-disc ml-5 text-sm text-gray-700 space-y-0.5">
-                      {skills.personal.map((item, i) => <li key={i}>{item}</li>)}
-                    </ul>
-                  </div>
-                </div>
-
-                {/* Core Skills */}
-                <div className="space-y-4">
-                  {skills.core.map((section, index) => (
-                    <div key={index}>
-                      <h3 className="text-lg font-semibold text-gray-700 mb-1">{section.category}</h3>
+                    {/* General & Personal */}
+                    <div className="mt-6">
+                      <h3 className="text-lg font-semibold text-gray-700 mb-1">Personal</h3>
                       <ul className="list-disc ml-5 text-sm text-gray-700 space-y-0.5">
-                        {section.items.map((item, i) => <li key={i}>{item}</li>)}
+                        {skills.personal.map((item, i) => <li key={i}>{item}</li>)}
                       </ul>
                     </div>
+                  </div>
+
+                  {/* Core Skills */}
+                  <div className="space-y-4">
+                    {skills.core.map((section, index) => (
+                      <div key={index}>
+                        <h3 className="text-lg font-semibold text-gray-700 mb-1">{section.category}</h3>
+                        <ul className="list-disc ml-5 text-sm text-gray-700 space-y-0.5">
+                          {section.items.map((item, i) => <li key={i}>{item}</li>)}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              
+              {/* Education Section */}
+              <div className="education-section">
+                <SectionTitle title="Education" icon="graduationCap" />
+                <div className="space-y-4">
+                  {education.map((item, index) => (
+                    <ExperienceItem key={index} {...item} />
                   ))}
                 </div>
               </div>
             </div>
             
-            {/* Education Section (Moved above Work History) */}
-            <div className="education-section pt-4">
-              <SectionTitle title="Education" icon="graduationCap" />
-              <div className="space-y-4">
-                {education.map((item, index) => (
-                  <ExperienceItem key={index} {...item} />
-                ))}
-              </div>
-            </div>
-
             {/* Work History */}
             <div className="work-history-section pt-4">
               <SectionTitle title="Work History" icon="briefcase" />
