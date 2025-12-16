@@ -1,5 +1,5 @@
 import React from 'react';
-import TechCv from './components/TechCv.jsx';
+import TechCv from './components/TechCv';
 
 
 const App = () => {
