@@ -9,8 +9,7 @@ const cvData = {
     location: "Auckland 1072",
   },
   summary: [
-    "Reliable and energetic professional with a strong work ethic, transitioning from a successful career in high-volume hospitality management into logistics and client support. Proven ability to remain calm under pressure and solve problems quickly in fast-paced environments.",
-    "Committed to accuracy, safety, and providing excellent customer service during the busy festive season."
+    "Reliable and energetic professional with a strong work ethic, transitioning from a successful career in high-volume hospitality management into logistics and client support. Proven ability to remain calm under pressure and solve problems quickly in fast-paced environments. Committed to accuracy, safety, and providing excellent customer service during the busy festive season."
   ],
   skills: {
     technical: [
