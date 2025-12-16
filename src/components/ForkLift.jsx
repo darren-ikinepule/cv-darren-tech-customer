@@ -1,49 +1,46 @@
-import React from 'react';
-
 // --- Data Structure ---
 
 const cvData = {
   personal: {
     name: "Darren Ikinepule",
-    title: "Logistics & Warehouse Support Specialist",
+    title: "Forklift Operator & Logistics Professional",
     email: "darrenikinepule@outlook.co.nz",
     phone: "0204339983",
     location: "Auckland 1072",
   },
   summary: [
-    "Reliable and energetic professional with a strong work ethic, transitioning from high volume hospitality management into logistics and warehouse support. Proven ability to remain calm under pressure, solve problems quickly, and maintain high standards in fast paced environments. Committed to accuracy, safety, and providing excellent service during the busy festive season."
+    "Reliable and energetic professional with a strong work ethic, transitioning from a successful career in high-volume hospitality management into logistics and client support. Proven ability to remain calm under pressure and solve problems quickly in fast-paced environments. Committed to accuracy, safety, and providing excellent customer service during the busy festive season."
   ],
   skills: {
     technical: [
       "Certified Forklift Operator: Counter Balance (LPG), Reach Electric, Stock Picker Electric, Pallet Truck Electric",
       "Inventory & Logistics: Detailed inventory records and accurate asset tracking for multi-location portfolios",
-      "Customer Service: Strong interpersonal skills with professional feedback resolution",
-      "Full Class 1 NZ Driver's Licence",
-      "Safety & Compliance: Committed to accuracy and safety standards"
+      "Customer Service: Professional resolution of customer feedback and special requests",
     ],
     core: [
-      { category: "Key Strengths", items: ["Reliable and energetic work ethic", "Ability to remain calm under pressure", "Quick problem-solving skills", "High standard maintenance in fast-paced environments", "Team collaboration and leadership"] },
-      { category: "Professional Qualities", items: ["Punctual and organized", "Self disciplined", "Detail oriented", "Safety conscious", "Customer focused"] },
+      { category: "Certifications & Qualifications", items: ["Full Class 1 NZ Driver's Licence", "Certified Forklift Operator (Counter Balance, Reach, Stock Picker, Pallet Truck)", "Software Development and Professional Skills (Take2 Programme, 2024)"] },
+      { category: "Professional Skills", items: ["Reliability and punctuality", "Attention to safety and accuracy", "Team collaboration and leadership", "Problem-solving in high-pressure environments", "Inventory management and asset tracking"] },
     ],
-    personal: ["Full Class 1 NZ Driver's Licence", "Strong team ethic and proactive attitude", "Reliable, punctual, organised, and self disciplined", "Committed to accuracy, safety, and excellent service"],
+    personal: ["Full Class 1 NZ Driver's Licence", "Strong team ethic and proactive attitude", "Reliable, punctual, organised, and self disciplined", "Excellent health and safety awareness"],
   },
   education: [
     {
-      role: "Forklift Certification",
-      company: "Certified Operator",
+      role: "Software Development and Professional Skills",
+      company: "Take2 Programme",
       location: "Auckland",
-      dates: "2024",
+      dates: "2024 - Present",
       description: [
-        "Counter Balance (LPG), Reach Electric, Stock Picker Electric, and Pallet Truck Electric",
+        "Full-time, project-based learning programme focused on industry-relevant technical skills and professional development.",
+        "Hands-on coding and web development projects.",
       ],
     },
     {
-      role: "Take2 Programme",
-      company: "Software Development and Professional Skills",
+      role: "Forklift Certification",
+      company: "Certified Training",
       location: "Auckland",
       dates: "2024",
       description: [
-        "Focused on developing professional habits, work ethic, and technical learning",
+        "Counter Balance (LPG), Reach Electric, Stock Picker Electric, and Pallet Truck Electric.",
       ],
     },
   ],
@@ -52,42 +49,71 @@ const cvData = {
       role: "Property Manager",
       company: "Gardenia Trust LTD",
       location: "Auckland",
-      dates: "10/2024 – Present",
+      dates: "10/2024 - Present",
       description: [
-        "Maintained detailed inventory and records for a diverse portfolio of 7 properties",
-        "Ensured accurate asset tracking and compliance across multiple locations",
-        "Organized and scheduled a comprehensive network of tradespeople for efficient repairs and maintenance"
-      ],
-      isHighlight: true,
+        "Managed a diverse portfolio encompassing 7 properties across New Zealand and the Pacific Islands, including: ",
+        "4 commercial buildings and 1 residential rental property in Auckland region, 2 international Airbnb properties.",
+        "Maintained detailed **inventory and records** for the multi-location portfolio, ensuring compliance and **accurate asset tracking**.",
+        "Organised and **scheduled a comprehensive network of tradespeople** for timely and efficient repairs, landscaping, and maintenance.",
+        
+      ]
     },
     {
       role: "Head Chef",
       company: "Kohuora Cafe",
       location: "Auckland",
-      dates: "05/2018 – 10/2022",
+      dates: "05/2018 - 10/2022",
       description: [
-        "Managed high volume, quality driven production standards in a fast paced environment",
-        "Oversaw daily operations and staff to ensure consistent quality and customer retention"
+        "Developed and refined the entire menu, driving product innovation that contributed to an 80% increase in daily lunch covers and significantly improved customer retention, while maintaining **high-volume, quality-driven production standards**.",
       ]
     },
     {
       role: "Gourmet Production Chef",
       company: "Eat My Lunch",
       location: "Auckland",
-      dates: "05/2016 – 05/2018",
+      dates: "05/2016 - 05/2018",
       description: [
-        "Maintained 99%+ quality standards through systematic quality control processes",
-        "Resolved customer feedback and special requests efficiently and professionally"
+        "Maintained **99%+ quality standards through systematic quality control processes** (GMP/HACCP relevant experience).",
+        "Resolved customer feedback and special requests efficiently and professionally.",
       ]
     },
     {
-      role: "Executive & Sous Chef",
-      company: "Various Resorts & Hotels",
-      location: "Multiple Locations",
-      dates: "1995 – 2015",
+      role: "Executive Chef",
+      company: "Chaweng Blue Lagoon Resort",
+      location: "Thailand",
+      dates: "01/2005 - 01/2015",
       description: [
-        "Managed teams of 15+ staff and oversaw complex operational tasks",
-        "Optimized internal processes to increase efficiency and reduce waste"
+        "Led a team of 15+ staff through training and performance management programs.",
+        "Achieved 95%+ guest satisfaction through systematic quality improvement.",
+      ]
+    },
+    {
+      role: "Executive Sous Chef",
+      company: "Impiana Resort And Spa",
+      location: "Koh Samui, Thailand",
+      dates: "06/2002 - 06/2004",
+      description: [
+        "Managed a high volume of operational tasks with strong multi-tasking skills.",
+        "Supported and improved internal processes to **increase kitchen efficiency and reduce food waste (process optimization)**.",
+      ]
+    },
+    {
+      role: "Sous Chef",
+      company: "Auckland Club",
+      location: "Auckland",
+      dates: "01/2000 - 01/2001",
+      description: [
+        "Managed private club catering and special event dining experiences.",
+        "Developed innovative menu items, increasing guest return rates.",
+      ]
+    },
+    {
+      role: "Sous Chef",
+      company: "Hyatt Hotel Auckland",
+      location: "Auckland",
+      dates: "11/1995 - 01/2000",
+      description: [
+        "Selected to represent Hyatt Auckland internationally (Saudi Arabia, Taipei, Singapore), showcasing New Zealand cuisine and culinary standards.",
       ]
     },
   ],
@@ -188,233 +214,11 @@ const ExperienceItem = ({ role, company, location, dates, description, isHighlig
 // --- Main App Component ---
 
 const ForkLift = () => {
-  // Add print styles to strictly fit 2 pages
-  React.useEffect(() => {
-    const style = document.createElement('style');
-    style.textContent = `
-      @media print {
-        * {
-          margin: 0 !important;
-          padding: 0 !important;
-          box-sizing: border-box;
-        }
-        html, body {
-          margin: 0.25in !important;
-          padding: 0 !important;
-          font-size: 9pt !important;
-          line-height: 1.15 !important;
-        }
-        .forklift-cv {
-          background: white !important;
-          margin: 0 !important;
-          padding: 0 !important;
-          font-size: 9pt !important;
-        }
-        .forklift-cv .cv-container {
-          box-shadow: none !important;
-          max-width: 100% !important;
-          background: white !important;
-          border: none !important;
-          margin: 0 !important;
-          padding: 0 !important;
-        }
-        .forklift-cv .cv-wrapper {
-          margin: 0 !important;
-          padding: 0 !important;
-        }
-        .forklift-cv header {
-          padding: 4px 0 !important;
-          margin: 0 0 4px 0 !important;
-          background: #374151 !important;
-          color: white !important;
-          border-radius: 0 !important;
-          page-break-inside: avoid;
-        }
-        .forklift-cv header h1 {
-          font-size: 14pt !important;
-          margin: 1px 0 !important;
-          padding: 0 !important;
-          line-height: 1.1 !important;
-        }
-        .forklift-cv header p {
-          font-size: 8.5pt !important;
-          margin: 1px 0 !important;
-          padding: 0 !important;
-          line-height: 1.1 !important;
-        }
-        .forklift-cv main {
-          padding: 0 !important;
-          margin: 0 !important;
-        }
-        .forklift-cv .summary-section {
-          margin: 0 0 3px 0 !important;
-          padding: 0 !important;
-          page-break-inside: avoid;
-        }
-        .forklift-cv .skills-education-row {
-          display: flex !important;
-          gap: 8px !important;
-          margin: 0 0 3px 0 !important;
-          page-break-inside: avoid;
-        }
-        .forklift-cv .skills-section {
-          flex: 1 !important;
-          margin: 0 !important;
-          padding: 0 !important;
-        }
-        .forklift-cv .education-section {
-          flex: 0.6 !important;
-          margin: 0 !important;
-          padding: 0 !important;
-        }
-        .forklift-cv .work-history-section {
-          margin: 0 !important;
-          padding: 0 !important;
-          page-break-inside: avoid;
-        }
-        .forklift-cv h2 {
-          font-size: 10pt !important;
-          font-weight: bold !important;
-          border-bottom: 0.5pt solid #3b82f6 !important;
-          padding-bottom: 1px !important;
-          margin: 2px 0 2px 0 !important;
-          line-height: 1 !important;
-        }
-        .forklift-cv h3 {
-          font-size: 8.5pt !important;
-          font-weight: bold !important;
-          margin: 2px 0 1px 0 !important;
-          padding: 0 !important;
-          line-height: 1 !important;
-        }
-        .forklift-cv p {
-          margin: 0 !important;
-          padding: 0 !important;
-          font-size: 9pt !important;
-          line-height: 1.1 !important;
-        }
-        .forklift-cv .text-base {
-          font-size: 9pt !important;
-        }
-        .forklift-cv .text-lg {
-          font-size: 8.5pt !important;
-        }
-        .forklift-cv .text-sm {
-          font-size: 8pt !important;
-        }
-        .forklift-cv .text-xl {
-          font-size: 10pt !important;
-        }
-        .forklift-cv .text-2xl {
-          font-size: 11pt !important;
-        }
-        .forklift-cv .text-4xl {
-          font-size: 13pt !important;
-        }
-        .forklift-cv .experience-item {
-          margin: 2px 0 !important;
-          padding: 1px 0 !important;
-          page-break-inside: avoid;
-          background: transparent !important;
-          border: none !important;
-          box-shadow: none !important;
-        }
-        .forklift-cv ul {
-          margin: 0 0 0 10px !important;
-          padding: 0 !important;
-          list-style: disc;
-        }
-        .forklift-cv li {
-          margin: 0.5px 0 !important;
-          padding: 0 !important;
-          font-size: 8.5pt !important;
-          line-height: 1.05 !important;
-        }
-        .forklift-cv .space-y-3 {
-          display: block;
-        }
-        .forklift-cv .space-y-3 > p {
-          margin: 1px 0 !important;
-          font-size: 8.5pt !important;
-          line-height: 1.15 !important;
-        }
-        .forklift-cv .skills-grid {
-          display: block !important;
-          margin: 0 !important;
-          padding: 0 !important;
-        }
-        .forklift-cv .grid-cols-1,
-        .forklift-cv .grid-cols-2 {
-          display: block !important;
-        }
-        .forklift-cv .gap-6 {
-          gap: 0 !important;
-        }
-        .forklift-cv .mt-6 {
-          margin-top: 1px !important;
-        }
-        .forklift-cv .mt-4 {
-          margin-top: 1px !important;
-        }
-        .forklift-cv .mt-2 {
-          margin-top: 0px !important;
-        }
-        .forklift-cv .mb-6,
-        .forklift-cv .mb-4,
-        .forklift-cv .mb-2 {
-          margin-bottom: 1px !important;
-        }
-        .forklift-cv .mb-1 {
-          margin-bottom: 0px !important;
-        }
-        .forklift-cv .pt-6,
-        .forklift-cv .pt-4,
-        .forklift-cv .pt-2 {
-          padding-top: 0px !important;
-        }
-        .forklift-cv .shadow-md,
-        .forklift-cv .shadow-xl,
-        .forklift-cv .shadow-2xl {
-          box-shadow: none !important;
-        }
-        .forklift-cv .rounded-lg,
-        .forklift-cv .rounded-t-lg {
-          border-radius: 0 !important;
-        }
-        .forklift-cv .space-y-1 > * {
-          margin: 0 0 !important;
-        }
-        .forklift-cv .space-y-0.5 > * {
-          margin: 0 0 !important;
-        }
-        .forklift-cv .space-y-4 {
-          display: block !important;
-        }
-        .forklift-cv .space-y-4 > * {
-          margin-bottom: 1px !important;
-        }
-        .forklift-cv .flex {
-          display: flex !important;
-        }
-        .forklift-cv .justify-between {
-          justify-content: space-between !important;
-        }
-        .forklift-cv .items-start {
-          align-items: flex-start !important;
-        }
-        .forklift-cv .items-center {
-          align-items: center !important;
-        }
-      }
-    `;
-    document.head.appendChild(style);
-    return () => document.head.removeChild(style);
-  }, []);
 
          const { personal, summary, skills, education, experience } = cvData;
 
   return (
-    <div className="forklift-cv min-h-screen bg-gray-100 p-4 sm:p-8 font-sans">
+    <div className="min-h-screen bg-gray-100 p-4 sm:p-8 font-sans">
       <div className="cv-container max-w-4xl mx-auto bg-white rounded-lg shadow-2xl">
         <div className="cv-wrapper">
         
@@ -435,52 +239,49 @@ const ForkLift = () => {
               </div>
             </div>
 
-            {/* Skills & Education Section (Side-by-side on print) */}
-            <div className="skills-education-row">
-              {/* Skills Section */}
-              <div className="skills-section">
-                <SectionTitle title="Skills" icon="briefcase" />
-                
-                <div className="skills-grid">
-                  {/* Technical Skills */}
-                  <div>
-                    <h3 className="text-lg font-semibold text-gray-700 mb-2">Technical</h3>
-                    <TechnicalSkills skills={skills.technical} />
+            {/* Skills Section */}
+            <div className="skills-section">
+              <SectionTitle title="Skills" icon="briefcase" />
+              
+              <div className="skills-grid grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Technical Skills */}
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-700 mb-2">Technical Skills</h3>
+                  <TechnicalSkills skills={skills.technical} />
 
-                    {/* General & Personal */}
-                    <div className="mt-6">
-                      <h3 className="text-lg font-semibold text-gray-700 mb-1">Personal</h3>
-                      <ul className="list-disc ml-5 text-sm text-gray-700 space-y-0.5">
-                        {skills.personal.map((item, i) => <li key={i}>{item}</li>)}
-                      </ul>
-                    </div>
-                  </div>
-
-                  {/* Core Skills */}
-                  <div className="space-y-4">
-                    {skills.core.map((section, index) => (
-                      <div key={index}>
-                        <h3 className="text-lg font-semibold text-gray-700 mb-1">{section.category}</h3>
-                        <ul className="list-disc ml-5 text-sm text-gray-700 space-y-0.5">
-                          {section.items.map((item, i) => <li key={i}>{item}</li>)}
-                        </ul>
-                      </div>
-                    ))}
+                  {/* General & Personal */}
+                  <div className="mt-6">
+                    <h3 className="text-lg font-semibold text-gray-700 mb-1">General & Personal</h3>
+                    <ul className="list-disc ml-5 text-sm text-gray-700 space-y-0.5">
+                      {skills.personal.map((item, i) => <li key={i}>{item}</li>)}
+                    </ul>
                   </div>
                 </div>
-              </div>
-              
-              {/* Education Section */}
-              <div className="education-section">
-                <SectionTitle title="Education" icon="graduationCap" />
+
+                {/* Core Skills */}
                 <div className="space-y-4">
-                  {education.map((item, index) => (
-                    <ExperienceItem key={index} {...item} />
+                  {skills.core.map((section, index) => (
+                    <div key={index}>
+                      <h3 className="text-lg font-semibold text-gray-700 mb-1">{section.category}</h3>
+                      <ul className="list-disc ml-5 text-sm text-gray-700 space-y-0.5">
+                        {section.items.map((item, i) => <li key={i}>{item}</li>)}
+                      </ul>
+                    </div>
                   ))}
                 </div>
               </div>
             </div>
             
+            {/* Education Section (Moved above Work History) */}
+            <div className="education-section pt-4">
+              <SectionTitle title="Education" icon="graduationCap" />
+              <div className="space-y-4">
+                {education.map((item, index) => (
+                  <ExperienceItem key={index} {...item} />
+                ))}
+              </div>
+            </div>
+
             {/* Work History */}
             <div className="work-history-section pt-4">
               <SectionTitle title="Work History" icon="briefcase" />
