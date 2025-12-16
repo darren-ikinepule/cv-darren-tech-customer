@@ -11,7 +11,7 @@ const cvData = {
     location: "Auckland 1072",
   },
   summary: [
-    "Reliable and energetic professional with a strong work ethic, transitioning from high-volume hospitality management into logistics and warehouse support. Proven ability to remain calm under pressure, solve problems quickly, and maintain high standards in fast-paced environments. Committed to accuracy, safety, and providing excellent service during the busy festive season."
+    "Reliable and energetic professional with a strong work ethic, transitioning from high volume hospitality management into logistics and warehouse support. Proven ability to remain calm under pressure, solve problems quickly, and maintain high standards in fast paced environments. Committed to accuracy, safety, and providing excellent service during the busy festive season."
   ],
   skills: {
     technical: [
@@ -23,7 +23,7 @@ const cvData = {
     ],
     core: [
       { category: "Key Strengths", items: ["Reliable and energetic work ethic", "Ability to remain calm under pressure", "Quick problem-solving skills", "High standard maintenance in fast-paced environments", "Team collaboration and leadership"] },
-      { category: "Professional Qualities", items: ["Punctual and organized", "Self-disciplined", "Detail-oriented", "Safety-conscious", "Customer-focused"] },
+      { category: "Professional Qualities", items: ["Punctual and organized", "Self disciplined", "Detail oriented", "Safety conscious", "Customer focused"] },
     ],
     personal: ["Full Class 1 NZ Driver's Licence", "Strong team ethic and proactive attitude", "Reliable, punctual, organised, and self disciplined", "Committed to accuracy, safety, and excellent service"],
   },
@@ -66,7 +66,7 @@ const cvData = {
       location: "Auckland",
       dates: "05/2018 – 10/2022",
       description: [
-        "Managed high-volume, quality-driven production standards in a fast-paced environment",
+        "Managed high volume, quality driven production standards in a fast paced environment",
         "Oversaw daily operations and staff to ensure consistent quality and customer retention"
       ]
     },
@@ -188,72 +188,184 @@ const ExperienceItem = ({ role, company, location, dates, description, isHighlig
 // --- Main App Component ---
 
 const ForkLift = () => {
-  // Add print styles to limit to 2 pages
+  // Add print styles to limit to 2 pages strictly
   React.useEffect(() => {
     const style = document.createElement('style');
     style.textContent = `
       @media print {
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        body {
+          margin: 0.4in;
+          font-size: 10pt;
+          line-height: 1.2;
+        }
         .forklift-cv {
           max-height: 100%;
           page-break-after: auto;
+          background: white !important;
         }
         .forklift-cv * {
           page-break-inside: avoid;
         }
         .forklift-cv .cv-container {
-          box-shadow: none;
+          box-shadow: none !important;
           max-width: 100%;
+          background: white !important;
+          border: none !important;
+        }
+        .forklift-cv .cv-wrapper {
+          margin: 0;
+          padding: 0;
         }
         .forklift-cv header {
-          padding: 8px 16px !important;
+          padding: 6px 0 !important;
+          margin: 0 0 8px 0 !important;
+          background: #374151 !important;
+          color: white !important;
+          border-radius: 0 !important;
+          page-break-inside: avoid;
+        }
+        .forklift-cv header h1 {
+          font-size: 16pt !important;
+          margin: 2px 0 !important;
+          padding: 0 !important;
+        }
+        .forklift-cv header p {
+          font-size: 10pt !important;
+          margin: 2px 0 !important;
+          padding: 0 !important;
         }
         .forklift-cv main {
-          padding: 12px 16px !important;
+          padding: 0 !important;
+          margin: 0 !important;
         }
-        .forklift-cv .summary-section {
-          margin-bottom: 8px;
-        }
-        .forklift-cv .skills-section {
-          margin-bottom: 8px;
-        }
-        .forklift-cv .education-section {
-          margin-bottom: 8px;
-        }
+        .forklift-cv .summary-section,
+        .forklift-cv .skills-section,
+        .forklift-cv .education-section,
         .forklift-cv .work-history-section {
-          margin-bottom: 0;
+          margin: 0 0 6px 0 !important;
+          padding: 0 !important;
+          page-break-inside: avoid;
         }
         .forklift-cv h2 {
-          padding-top: 4px !important;
-          margin-bottom: 8px !important;
-          font-size: 1.25rem !important;
+          font-size: 11pt !important;
+          font-weight: bold !important;
+          border-bottom: 1px solid #3b82f6 !important;
+          padding-bottom: 2px !important;
+          margin: 6px 0 4px 0 !important;
         }
         .forklift-cv h3 {
-          font-size: 0.95rem !important;
-          margin-bottom: 4px !important;
+          font-size: 10pt !important;
+          font-weight: bold !important;
+          margin: 4px 0 2px 0 !important;
+          padding: 0 !important;
         }
         .forklift-cv p {
-          margin: 2px 0 !important;
-          line-height: 1.3 !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          font-size: 10pt !important;
+          line-height: 1.2 !important;
         }
         .forklift-cv .text-base {
-          font-size: 0.85rem !important;
+          font-size: 10pt !important;
+        }
+        .forklift-cv .text-lg {
+          font-size: 10pt !important;
         }
         .forklift-cv .text-sm {
-          font-size: 0.75rem !important;
+          font-size: 9pt !important;
         }
-        .forklift-cv .experience-item {
-          margin-bottom: 6px !important;
-          padding: 4px !important;
+        .forklift-cv .text-xl {
+          font-size: 11pt !important;
+        }
+        .forklift-cv .text-2xl {
+          font-size: 12pt !important;
+        }
+        .forklift-cv .text-4xl {
+          font-size: 14pt !important;
+        }
+        .forklift-cv .experience-item,
+        .forklift-cv .education-item {
+          margin: 3px 0 !important;
+          padding: 2px 0 !important;
+          page-break-inside: avoid;
+          background: transparent !important;
+          border: none !important;
+          box-shadow: none !important;
         }
         .forklift-cv ul {
-          margin: 2px 0 !important;
-          padding-left: 12px !important;
+          margin: 1px 0 1px 12px !important;
+          padding: 0 !important;
+          list-style: disc;
         }
         .forklift-cv li {
           margin: 1px 0 !important;
+          padding: 0 !important;
+          font-size: 9.5pt !important;
+          line-height: 1.1 !important;
+        }
+        .forklift-cv .flex {
+          display: flex;
+        }
+        .forklift-cv .justify-between {
+          justify-content: space-between;
+        }
+        .forklift-cv .italic {
+          font-style: italic;
+        }
+        .forklift-cv .space-y-3 {
+          display: block;
         }
         .forklift-cv .space-y-3 > p {
           margin: 2px 0 !important;
+          font-size: 9.5pt !important;
+        }
+        .forklift-cv .skills-grid {
+          display: block !important;
+        }
+        .forklift-cv .grid-cols-2 {
+          display: block !important;
+        }
+        .forklift-cv .mt-6 {
+          margin-top: 3px !important;
+        }
+        .forklift-cv .mt-4 {
+          margin-top: 2px !important;
+        }
+        .forklift-cv .mt-2 {
+          margin-top: 2px !important;
+        }
+        .forklift-cv .mb-6,
+        .forklift-cv .mb-4,
+        .forklift-cv .mb-2 {
+          margin-bottom: 2px !important;
+        }
+        .forklift-cv .pt-6,
+        .forklift-cv .pt-4,
+        .forklift-cv .pt-2 {
+          padding-top: 2px !important;
+        }
+        .forklift-cv .gap-6 {
+          gap: 0 !important;
+        }
+        .forklift-cv .shadow-md,
+        .forklift-cv .shadow-xl,
+        .forklift-cv .shadow-2xl {
+          box-shadow: none !important;
+        }
+        .forklift-cv .rounded-lg,
+        .forklift-cv .rounded-t-lg {
+          border-radius: 0 !important;
+        }
+        .forklift-cv .space-y-1 > * {
+          margin: 0.5px 0 !important;
+        }
+        .forklift-cv .space-y-0.5 > * {
+          margin: 0px 0 !important;
         }
       }
     `;
