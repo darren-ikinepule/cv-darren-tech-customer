@@ -3,20 +3,20 @@
 const cvData = {
   personal: {
     name: "Darren Ikinepule",
-    title: "Full-Stack Web Developer",
+    title: "Full Stack Web Developer",
     email: "darrenikinepule@outlook.co.nz",
     phone: "0204339983",
     location: "Auckland 1072",
   },
   summary: [
-    "Full-Stack Developer with a background in high-pressure operations and management. Having transitioned from a career as an Executive Chef, I bring a unique blend of technical proficiency in the MERN stack and the ability to solve complex problems under intense pressure.",
-    "Recently completed the intensive Take2 Software Development programme, focusing on building scalable web applications and collaborating in Agile environments. I am passionate about writing clean, efficient code and delivering user-centric digital solutions."
+    "Full Stack Developer with a background in high pressure operations and management. Having transitioned from a career as an Executive Chef, I bring a unique blend of technical proficiency in the MERN stack and the ability to solve complex problems under intense pressure.",
+    "Recently completed the intensive Take2 Software Development programme, focusing on building scalable web applications and collaborating in Agile environments. I am passionate about writing clean, efficient code and delivering user centric digital solutions."
   ],
   projects: [
     {
       name: "Fuel vs Fire",
       tech: "React.js, Node.js, Express.js, MongoDB",
-      description: "A full-stack application demonstrating seamless frontend and backend integration. Focused on responsive design and RESTful API architecture.",
+      description: "A full stack application demonstrating seamless frontend and backend integration. Focused on responsive design and RESTful API architecture.",
       link: "github.com/darrenikinepule"
     }
   ],
@@ -31,7 +31,7 @@ const cvData = {
     core: [
       { 
         category: "Professional Strengths", 
-        items: ["Technical Problem Solving", "Agile Workflow", "Cross-functional Collaboration", "High-Pressure Delivery"] 
+        items: ["Technical Problem Solving", "Agile Workflow", "Cross functional Collaboration", "High Pressure Delivery"] 
       },
       { 
         category: "Leadership & Management", 
@@ -39,7 +39,7 @@ const cvData = {
       },
     ],
     personal: [
-      "Reliable, punctual, and self-disciplined",
+      "Reliable, punctual, and self disciplined",
       "Full Class 1 NZ Driver's Licence",
       "Certified Forklift Operator (Counter Balance, Reach, Stock Picker)"
     ],
@@ -51,8 +51,8 @@ const cvData = {
       location: "Auckland",
       dates: "2024 - Present",
       description: [
-        "Engaged in a 1,000+ hour intensive coding bootcamp focused on industry-standard software development practices.",
-        "Developed full-stack applications using JavaScript and the MERN stack.",
+        "Engaged in a 1,000+ hour intensive coding bootcamp focused on industry standard software development practices.",
+        "Developed full stack applications using JavaScript and the MERN stack.",
         "Collaborated in Agile teams to deliver project milestones and conduct peer code reviews.",
       ],
       isHighlight: true,
@@ -73,7 +73,7 @@ const cvData = {
       location: "NZ & Thailand",
       dates: "1995 - 2022",
       description: [
-        "Led high-performing teams of 15+ in high-pressure environments, achieving 95%+ satisfaction rates.",
+        "Led high-performing teams of 15+ in high pressure environments, achieving 95%+ satisfaction rates.",
         "Managed complex operational tasks and improved internal processes to increase efficiency.",
         "Represented Hyatt Auckland internationally, maintaining high quality standards.",
       ]
@@ -109,13 +109,13 @@ const TechCv = () => {
       <div className="max-w-4xl mx-auto bg-white shadow-2xl rounded-lg overflow-hidden border border-gray-200">
         
         {/* Header */}
-        <header className="bg-gray-900 text-white p-8">
+        <header className="bg-blue-100 text-gray-900 p-8">
           <div className="flex flex-col md:flex-row justify-between items-start">
             <div>
-              <h1 className="text-4xl font-black text-blue-400 leading-none">{personal.name}</h1>
-              <p className="text-xl font-medium text-gray-300 mt-2">{personal.title}</p>
+              <h1 className="text-4xl font-black text-blue-700 leading-none">{personal.name}</h1>
+              <p className="text-xl font-medium text-blue-600 mt-2">{personal.title}</p>
             </div>
-            <div className="mt-4 md:mt-0 text-sm space-y-1 text-gray-400">
+            <div className="mt-4 md:mt-0 text-sm space-y-1 text-gray-700">
               <div className="flex items-center space-x-2"><Icon path="mail" className="w-4 h-4" /> <span>{personal.email}</span></div>
               <div className="flex items-center space-x-2"><Icon path="phone" className="w-4 h-4" /> <span>{personal.phone}</span></div>
               <div className="flex items-center space-x-2"><span>📍 {personal.location}</span></div>
@@ -169,7 +169,7 @@ const TechCv = () => {
 
               {/* Work History */}
               <section>
-                <SectionTitle title="Professional Experience" icon="briefcase" />
+                <SectionTitle title="Education & Professional Experience" icon="briefcase" />
                 <div className="space-y-6">
                   {experience.map((job, i) => (
                     <div key={i} className={`relative pl-4 border-l-2 ${job.isHighlight ? 'border-blue-500' : 'border-gray-200'}`}>
