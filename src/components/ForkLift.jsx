@@ -14,7 +14,7 @@ const cvData = {
   skills: {
     technical: [
       "Certified Forklift Operator: Counter Balance (LPG), Reach Electric, Stock Picker Electric, Pallet Truck Electric",
-      "Inventory & Logistics: Detailed inventory records and accurate asset tracking for multi-location portfolios",
+      "Inventory & Logistics: Detailed inventory records and accurate asset tracking for multi location portfolios",
       "Customer Service: Professional resolution of customer feedback and special requests",
     ],
     core: [
@@ -30,8 +30,8 @@ const cvData = {
       location: "Auckland",
       dates: "2024 - Present",
       description: [
-        "Full-time, project-based learning programme focused on industry-relevant technical skills and professional development.",
-        "Hands-on coding and web development projects.",
+        "Full time, project based learning programme focused on industry relevant technical skills and professional development.",
+        "Hands on coding and web development projects.",
       ],
     },
     {
@@ -53,8 +53,8 @@ const cvData = {
       description: [
         "Managed a diverse portfolio encompassing 7 properties across New Zealand and the Pacific Islands, including: ",
         "4 commercial buildings and 1 residential rental property in Auckland region, 2 international Airbnb properties.",
-        "Maintained detailed **inventory and records** for the multi-location portfolio, ensuring compliance and **accurate asset tracking**.",
-        "Organised and **scheduled a comprehensive network of tradespeople** for timely and efficient repairs, landscaping, and maintenance.",
+        "Maintained detailed inventory and records for the multi location portfolio, ensuring compliance and accurate asset tracking.",
+        "Organised and scheduled a comprehensive network of tradespeople for timely and efficient repairs, landscaping, and maintenance.",
         
       ]
     },
@@ -64,7 +64,7 @@ const cvData = {
       location: "Auckland",
       dates: "05/2018 - 10/2022",
       description: [
-        "Developed and refined the entire menu, driving product innovation that contributed to an 80% increase in daily lunch covers and significantly improved customer retention, while maintaining **high-volume, quality-driven production standards**.",
+        "Developed and refined the entire menu, driving product innovation that contributed to an 80% increase in daily lunch covers and significantly improved customer retention, while maintaining high volume, quality driven production standards.",
       ]
     },
     {
@@ -73,7 +73,7 @@ const cvData = {
       location: "Auckland",
       dates: "05/2016 - 05/2018",
       description: [
-        "Maintained **99%+ quality standards through systematic quality control processes** (GMP/HACCP relevant experience).",
+        "Maintained 99%+ quality standards through systematic quality control processes (GMP/HACCP relevant experience).",
         "Resolved customer feedback and special requests efficiently and professionally.",
       ]
     },
@@ -93,8 +93,8 @@ const cvData = {
       location: "Koh Samui, Thailand",
       dates: "06/2002 - 06/2004",
       description: [
-        "Managed a high volume of operational tasks with strong multi-tasking skills.",
-        "Supported and improved internal processes to **increase kitchen efficiency and reduce food waste (process optimization)**.",
+        "Managed a high volume of operational tasks with strong multi tasking skills.",
+        "Supported and improved internal processes to increase kitchen efficiency and reduce food waste (process optimization).",
       ]
     },
     {
