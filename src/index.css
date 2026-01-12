@@ -3,3 +3,38 @@
 @tailwind utilities;
 
 /* Print Styles for 2-page CV layout */
+
+@media print {
+  body {
+    background-color: white !important;
+    padding: 0 !important;
+  }
+  .max-w-4xl {
+    max-width: 100% !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+  .bg-slate-50 {
+    background-color: white !important;
+  }
+  /* Ensure the blue header and accents still print in color */
+  header, .bg-blue-100, .bg-blue-50, .border-blue-500 {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+/* Custom Scrollbar for better previewing */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
