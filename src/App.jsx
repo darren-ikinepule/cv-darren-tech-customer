@@ -1,10 +1,11 @@
 import React from "react";
-import FrontEndCv from "./components/FrontEndCv";
+
+import ForkLift from "./components/ForkLift";
 
 const App = () => {
   return (
     <>
-      <FrontEndCv />
+     <ForkLift />
     </>
   );
 };

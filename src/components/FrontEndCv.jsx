@@ -11,14 +11,14 @@ const cvData = {
     location: "Auckland 1072",
   },
   summary: [
-    "Front End Developer with a strong technical foundation in React.js, Tailwind CSS, and Vite. Transitioning from a career as an Executive Chef, I bring a unique ability to troubleshoot complex UI problems and deliver high-quality, user-centric solutions under intense pressure.",
+    "Front End Developer with a strong technical foundation in React.js, Tailwind CSS, and Vite. Transitioning from a career as an Executive Chef, I bring a unique ability to troubleshoot complex UI problems and deliver high quality, user centric solutions under intense pressure.",
     "Recently completed an intensive 1,000+ hour programme focused on building responsive, accessible web applications using modern CSS patterns and Agile collaboration."
   ],
   projects: [
     {
       name: "Fuel vs Fire",
       tech: "React, Node.js, Tailwind CSS, Vercel", // Added Vite/Tailwind
-      description: "A full stack application focused on mobile-first responsive design. Optimized layouts using Flexbox to ensure cross-browser stability and performance across Chrome and Safari.",
+      description: "A full stack application focused on mobile first responsive design. Optimized layouts using Flexbox to ensure cross browser stability and performance across Chrome and Safari.",
       link: "github.com/darren-ikinepule/fuel-and-fire" // Updated URL
     }
   ],
@@ -32,7 +32,7 @@ const cvData = {
     core: [
       { 
         category: "Professional Strengths", 
-        items: ["UI Troubleshooting & Debugging", "Agile Workflow", "Cross-browser Compatibility", "High Pressure Delivery"] // Tailored
+        items: ["UI Troubleshooting & Debugging", "Agile Workflow", "Cross browser Compatibility", "High Pressure Delivery"] // Tailored
       },
       { 
         category: "Leadership & Management", 
@@ -40,7 +40,7 @@ const cvData = {
       },
     ],
     personal: [
-      "Reliable, punctual, and self-disciplined",
+      "Reliable, punctual, and self disciplined",
       "Full Class 1 NZ Driver's Licence",
       "NZ Citizen (Full Right to Work)" // Answer to employer question
     ],
@@ -53,7 +53,7 @@ const cvData = {
       dates: "2024 - Present",
       description: [
         "Engaged in a 1,000+ hour intensive coding bootcamp specializing in building responsive interfaces with React and Tailwind CSS.",
-        "Translated design mockups from Front End Mentor into accessible, pixel-perfect code using modern CSS patterns.",
+        "Translated design mockups from Front End Mentor into accessible, pixel perfect code using modern CSS patterns.",
         "Collaborated in Agile teams to deliver project milestones and conduct peer code reviews to ensure UI quality.",
       ],
       isHighlight: true,
@@ -74,7 +74,7 @@ const cvData = {
       location: "NZ & Thailand",
       dates: "1995 - 2022",
       description: [
-        "Led high-performing teams of 15+ in high-pressure environments, achieving 95%+ satisfaction rates.",
+        "Led high performing teams of 15+ in high pressure environments, achieving 95%+ satisfaction rates.",
         "Managed complex operational tasks and improved internal processes to increase efficiency.",
       ]
     },
