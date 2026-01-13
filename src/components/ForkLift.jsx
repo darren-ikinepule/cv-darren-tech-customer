@@ -19,7 +19,7 @@ const cvData = {
     ],
     core: [
       { category: "Certifications & Qualifications", items: ["Full Class 1 NZ Driver's Licence", "Certified Forklift Operator (Counter Balance, Reach, Stock Picker, Pallet Truck)", "Software Development and Professional Skills (Take2 Programme, 2024)"] },
-      { category: "Professional Skills", items: ["Reliability and punctuality", "Attention to safety and accuracy", "Team collaboration and leadership", "Problem-solving in high-pressure environments", "Inventory management and asset tracking"] },
+      { category: "Professional Skills", items: ["Reliability and punctuality", "Attention to safety and accuracy", "Team collaboration and leadership", "Problem solving in high pressure environments", "Inventory management and asset tracking"] },
     ],
     personal: ["Full Class 1 NZ Driver's Licence", "Strong team ethic and proactive attitude", "Reliable, punctual, organised, and self disciplined", "Excellent health and safety awareness"],
   },
