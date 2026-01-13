@@ -94,7 +94,7 @@ const Icon = ({ path, className = "w-4 h-4" }) => (
 );
 
 const SectionTitle = ({ title, icon }) => (
-  <h2 className="text-xl font-bold border-b-2 border-blue-600 pb-1 mb-4 flex items-center space-x-2 text-gray-800 pt-6">
+  <h2 className="text-xl font-bold border-b-2 border-blue-600 pb-1 mb-4 flex items-center space-x-2 text-black pt-6">
     <Icon path={icon} className="w-5 h-5 text-blue-600" />
     <span className="uppercase tracking-wide">{title}</span>
   </h2>
@@ -110,13 +110,13 @@ const FrontEndCv = () => {
       <div className="max-w-4xl mx-auto bg-white shadow-2xl rounded-lg overflow-hidden border border-gray-200 print:shadow-none print:border-none">
         
         {/* Header - Styled for Tech */}
-        <header className="bg-blue-100 text-gray-900 p-8 border-b-4 border-blue-600">
+        <header className="bg-blue-100 text-black p-8 border-b-4 border-blue-600">
           <div className="flex flex-col md:flex-row justify-between items-start">
             <div>
               <h1 className="text-4xl font-black text-blue-700 leading-none">{personal.name}</h1>
               <p className="text-xl font-medium text-blue-600 mt-2 uppercase tracking-tighter">{personal.title}</p>
             </div>
-            <div className="mt-4 md:mt-0 text-sm space-y-1 text-gray-700 font-medium">
+            <div className="mt-4 md:mt-0 text-sm space-y-1 text-black font-medium">
               <div className="flex items-center space-x-2"><Icon path="mail" className="w-4 h-4" /> <span>{personal.email}</span></div>
               <div className="flex items-center space-x-2"><Icon path="phone" className="w-4 h-4" /> <span>{personal.phone}</span></div>
               <div className="flex items-center space-x-2"><span>📍 {personal.location}</span></div>
@@ -128,7 +128,7 @@ const FrontEndCv = () => {
           {/* Summary Section */}
           <section className="mb-8">
             <SectionTitle title="Professional Summary" icon="star" />
-            <div className="bg-blue-50 p-4 rounded-r-lg border-l-4 border-blue-500 italic text-gray-700 text-sm leading-relaxed">
+            <div className="bg-blue-50 p-4 rounded-r-lg border-l-4 border-blue-500 italic text-black text-sm leading-relaxed">
               {summary.map((para, i) => <p key={i} className="mb-2 last:mb-0">{para}</p>)}
             </div>
           </section>
@@ -138,7 +138,7 @@ const FrontEndCv = () => {
             <div className="md:col-span-1 space-y-6">
               <section>
                 <h3 className="text-sm font-black text-blue-600 uppercase mb-3 tracking-widest">Stack & Tools</h3>
-                <ul className="text-sm text-gray-700 space-y-2">
+                <ul className="text-sm text-black space-y-2">
                   {skills.technical.map((s, i) => <li key={i} className="pb-1 border-b border-gray-100">{s}</li>)}
                 </ul>
               </section>
@@ -146,16 +146,16 @@ const FrontEndCv = () => {
                 <h3 className="text-sm font-black text-blue-600 uppercase mb-3 tracking-widest">Key Strengths</h3>
                 {skills.core.map((cat, i) => (
                   <div key={i} className="mb-4">
-                    <p className="text-xs font-bold text-gray-500 mb-1">{cat.category}</p>
-                    <ul className="text-xs text-gray-600 list-disc ml-4 font-medium">
+                    <p className="text-xs font-bold text-black mb-1">{cat.category}</p>
+                    <ul className="text-xs text-black list-disc ml-4 font-medium">
                       {cat.items.map((item, j) => <li key={j}>{item}</li>)}
                     </ul>
                   </div>
                 ))}
               </section>
               <section className="bg-gray-50 p-3 rounded border border-gray-100">
-                <h3 className="text-xs font-black text-gray-400 uppercase mb-2">Personal</h3>
-                <ul className="text-[10px] text-gray-500 space-y-1">
+                <h3 className="text-xs font-black text-black uppercase mb-2">Personal</h3>
+                <ul className="text-[10px] text-black space-y-1">
                   {skills.personal.map((p, i) => <li key={i}>• {p}</li>)}
                 </ul>
               </section>
@@ -169,10 +169,10 @@ const FrontEndCv = () => {
                 {projects.map((proj, i) => (
                   <div key={i} className="bg-white border border-gray-200 p-4 rounded-lg shadow-sm hover:border-blue-300 transition-colors">
                     <div className="flex justify-between items-center mb-2">
-                      <h4 className="font-bold text-gray-900">{proj.name}</h4>
+                      <h4 className="font-bold text-black">{proj.name}</h4>
                     </div>
                     <p className="text-xs font-mono text-blue-600 mb-2 font-bold">{proj.tech}</p>
-                    <p className="text-sm text-gray-600 leading-relaxed">{proj.description}</p>
+                    <p className="text-sm text-black leading-relaxed">{proj.description}</p>
                     <p className="text-xs text-blue-500 mt-2 font-medium">{proj.link}</p>
                   </div>
                 ))}
@@ -185,11 +185,11 @@ const FrontEndCv = () => {
                   {experience.map((job, i) => (
                     <div key={i} className={`relative pl-4 border-l-2 ${job.isHighlight ? 'border-blue-500' : 'border-gray-200'}`}>
                       <div className="flex justify-between items-baseline">
-                        <h4 className={`font-bold ${job.isHighlight ? 'text-blue-700 text-base' : 'text-gray-900 text-sm'}`}>{job.role}</h4>
-                        <span className="text-[10px] font-bold text-gray-400 uppercase">{job.dates}</span>
+                        <h4 className={`font-bold ${job.isHighlight ? 'text-blue-700 text-base' : 'text-black text-sm'}`}>{job.role}</h4>
+                        <span className="text-[10px] font-bold text-black uppercase">{job.dates}</span>
                       </div>
-                      <p className="text-xs font-bold text-gray-500 mb-2 tracking-wide uppercase">{job.company}</p>
-                      <ul className="text-sm text-gray-600 list-disc ml-4 space-y-1.5 leading-relaxed">
+                      <p className="text-xs font-bold text-black mb-2 tracking-wide uppercase">{job.company}</p>
+                      <ul className="text-sm text-black list-disc ml-4 space-y-1.5 leading-relaxed">
                         {job.description.map((point, j) => <li key={j}>{point}</li>)}
                       </ul>
                     </div>
