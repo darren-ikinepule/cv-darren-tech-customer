@@ -2,28 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Print Styles for 2-page CV layout */
-
-@media print {
-  body {
-    background-color: white !important;
-    padding: 0 !important;
-  }
-  .max-w-4xl {
-    max-width: 100% !important;
-    box-shadow: none !important;
-    border: none !important;
-  }
-  .bg-slate-50 {
-    background-color: white !important;
-  }
-  /* Ensure the blue header and accents still print in color */
-  header, .bg-blue-100, .bg-blue-50, .border-blue-500 {
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-  }
-}
-
 /* Custom Scrollbar for better previewing */
 ::-webkit-scrollbar {
   width: 8px;
