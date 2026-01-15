@@ -1,7 +1,13 @@
 import React from "react";
-
-
+import JuniorTechCv from "./components/JuniorTechCv";
 import FrontEndCv from "./components/FrontEndCv";
+import TechCV from "./components/TechCv";
+
+
+
+
+
+
 
 
 
@@ -14,7 +20,12 @@ import FrontEndCv from "./components/FrontEndCv";
 const App = () => {
   return (
     <>
+     
+     
+     <JuniorTechCv />
      <FrontEndCv />
+     <TechCV />
+
     </>
   );
 };

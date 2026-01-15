@@ -9,6 +9,7 @@ const cvData = {
     phone: "0204339983",
     location: "Auckland 1072",
     github: "github.com/darren-ikinepule",
+    linkedin: "https://www.linkedin.com/in/darren-ikinepule-792914335/",
     projectRepo: "https://github.com/darren-ikinepule/fuel-and-fire.git",
     liveApp: "https://fuel-and-fire-htsk.vercel.app/"
   },
@@ -34,7 +35,7 @@ const cvData = {
       { 
         category: "Professional Skills", 
         items: [
-          "Clear communication for technical and non-technical staff", 
+          "Clear communication for technical and non technical staff", 
           "Systematic problem solving & common sense approach", 
           "Operational efficiency & process management", 
           "High-level punctuality and team reliability"
@@ -94,6 +95,7 @@ const Icon = ({ path, className = "w-4 h-4" }) => (
     {path === 'location' && <path d="M11.54 22.351l.07.04.28.16a1 1 0 001.22 0l.28-.16.07-.04a41.8 41.8 0 003.525-6.736c.2-.4.2-.9 0-1.3a41.8 41.8 0 00-3.525-6.736l-.07-.04a.75.75 0 00-.76 0l-.07.04a41.8 41.8 0 00-3.525 6.736c-.2.4-.2.9 0 1.3a41.8 41.8 0 003.525 6.736zm-1.04-6.601a3 3 0 114.5-4.5 3 3 0 01-4.5 4.5z" />}
     {path === 'github' && <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />}
     {path === 'external' && <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/>}
+    {path === 'linkedin' && <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />}
     {path === 'star' && <path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" />}
   </svg>
 );
@@ -116,7 +118,11 @@ const Header = ({ personal }) => (
         </div>
         <div className="flex items-center space-x-2 justify-start md:justify-end">
           <Icon path="github" className="w-4 h-4 text-emerald-400 print:text-emerald-600" />
-          <span>{personal.github}</span>
+          <a href={`https://${personal.github}`} target="_blank" rel="noopener noreferrer" className="hover:underline">{personal.github}</a>
+        </div>
+        <div className="flex items-center space-x-2 justify-start md:justify-end">
+          <Icon path="linkedin" className="w-4 h-4 text-emerald-400 print:text-emerald-600" />
+          <a href={personal.linkedin} target="_blank" rel="noopener noreferrer" className="hover:underline">LinkedIn</a>
         </div>
       </div>
     </div>
@@ -172,8 +178,8 @@ const JuniorTechCV = () => {
                 </ul>
                 <div className="mt-6 p-4 bg-emerald-50 border border-emerald-200 rounded-md print:bg-white print:border-slate-200 print:p-2 print:mt-4">
                   <p className="text-sm font-bold text-emerald-900 mb-1">Portfolio Project:</p>
-                  <p className="text-sm text-emerald-700 font-medium">Fuel vs Fire Live App</p>
-                  <p className="text-xs text-slate-500 mt-1 break-all">{personal.liveApp}</p>
+                  <a href={personal.liveApp} target="_blank" rel="noopener noreferrer" className="text-sm text-emerald-700 font-medium hover:underline cursor-pointer">Fuel vs Fire Live App</a>
+                  <p className="text-xs text-slate-500 mt-1 break-all"><a href={personal.liveApp} target="_blank" rel="noopener noreferrer" className="hover:underline">{personal.liveApp}</a></p>
                 </div>
               </div>
 
@@ -211,6 +217,7 @@ const JuniorTechCV = () => {
         
         <footer className="bg-slate-50 p-6 text-center text-sm text-slate-400 border-t border-slate-100 print:bg-white print:text-slate-500 print:pt-8">
           {/* References and Full Portfolio available upon request. */}
+          Full Portfolio: <a href={`https://${personal.github}`} target="_blank" rel="noopener noreferrer" className="hover:underline">{personal.github}</a>
         </footer>
       </div>
       
