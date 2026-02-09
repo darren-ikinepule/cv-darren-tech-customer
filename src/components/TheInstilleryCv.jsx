@@ -1,57 +1,54 @@
-import React from 'react';
+import React from "react";
 
-// --- Integrated Data Structure ---
 const cvData = {
   personal: {
     name: "Darren Ikinepule",
-    title: "Junior Full Stack Developer",
+    title: "IT Support & Operations Professional",
     email: "darrenikinepule@outlook.co.nz",
     phone: "0204339983",
     location: "Auckland 1072",
+    linkedin: "https://www.linkedin.com/in/darren-ikinepule-792914335",
     github: "github.com/darren-ikinepule",
-    linkedin: "https://www.linkedin.com/in/darren-ikinepule-792914335/",
-    projectRepo: "https://github.com/darren-ikinepule/fuel-and-fire.git",
-    liveApp: "https://fuel-and-fire-htsk.vercel.app/"
+    liveApp: "https://fuel-and-fire-htsk.vercel.app",
   },
+
   summary: [
-    "Full Stack Developer and Take2 graduate with a background in high pressure operations. I bring a unique blend of technical proficiency in the MERN stack and the ability to solve complex problems under intense pressure. Focused on writing clean code and providing reliable technical solutions.",
+    "Reliable IT professional transitioning from 20+ years in high pressure operations into technical support. Proven ability to manage high volume client needs 350+ pax under strict 15 minute response times, combined with practical experience in Office 365 and hardware troubleshooting. Focused on clear communication and diligent process control.",
   ],
-  projects: [
-    {
-      name: "Fuel vs Fire",
-      tech: "React, Node.js, Express, MongoDB",
-      description: "A full stack deployment demonstrating seamless frontend and backend integration. Features responsive design and RESTful API architecture with a focus on stable database management.",
-      github: "https://github.com/darren-ikinepule/fuel-and-fire.git",
-      live: "https://fuel-and-fire-htsk.vercel.app/"
-    }
-  ],
+
   skills: {
     technical: [
-      "Stack: JavaScript (ES6+), React, Node.js, Express",
-      "Databases: MongoDB (NoSQL) & MySQL",
-      "Core IT: SDLC, RESTful APIs, Version Control (Git)",
-      "Technical Support: Hardware configuration & troubleshooting",
+      "Office 365, Windows Troubleshooting & Google Workspace",
+      "Hardware: Printers, Networking & EFTPOS Troubleshooting",
+      "Information Gathering, Ticket Documentation & Asset Tracking",
+      "JavaScript (ES6+), React, Node.js, Express",
+      "Databases: MongoDB, MySQL, REST APIs, Git/GitHub",
     ],
     core: [
-      { 
-        category: "Technical Foundation", 
+      {
+        category: "Professional Strengths",
         items: [
-          "1,000+ hour intensive Take2 Software Development Programme",
-          "Advanced Digital Literacy (AI Prompting, Asset Tracking)", 
-          "Agile Methodologies & Peer Code Reviews"
-        ] 
-      },
-      { 
-        category: "Professional Strengths", 
-        items: [
-          "Systematic Troubleshooting & Logic", 
-          "Operational Efficiency & Process Management", 
-          "Team Leadership (15+ Staff)",
-          "High level Punctuality & Reliability"
-        ] 
+          "Calm under pressure in high volume environments 350+ pax",
+          "Strict adherence to timeframes and service SLAs",
+          "Clear communication for technical and non technical users",
+          "Strong reliability, punctuality, and professional work ethic",
+          "Fast learner with structured technical training",
+        ],
       },
     ],
   },
+
+  projects: [
+    {
+      name: "Fuel vs Fire – Full Stack Web Application",
+      tech: "React, Node.js, Express, MongoDB",
+      description:
+        "Designed and deployed a full stack application focused on clean data handling, error management, and maintainable code to ensure system reliability.",
+      live: "https://fuel-and-fire-htsk.vercel.app",
+      github: "https://github.com/darren-ikinepule/fuel-and-fire",
+    },
+  ],
+
   experience: [
     {
       role: "Relief Chef / Operations (Contract)",
@@ -69,49 +66,54 @@ const cvData = {
       role: "Software Development Immersion",
       company: "Take2 Programme",
       location: "Auckland",
-      dates: "2024 - Present",
+      dates: "2024 – Present",
       description: [
-        "Project based learning focusing on the full Software Development Life Cycle (SDLC).",
-        "Built and maintained full stack applications with an emphasis on stable database design and error handling.",
-        "Collaborated in Agile teams to deliver project milestones and optimize workflows."
+        "Completed 1,000+ hours of project based technical immersion and software development",
+        "Focused on structured problem solving, information gathering, and system troubleshooting",
+        "Built and maintained full stack applications following SDLC principles",
       ],
-      isHighlight: true
     },
     {
-      role: "Property Manager / Operations",
+      role: "Property Manager / Operations Support",
       company: "Gardenia Trust LTD",
       location: "Auckland",
-      dates: "10/2024 - Present",
+      dates: "2024 – Present",
       description: [
-        "Provided technical and database support for a portfolio of 7 properties, troubleshooting system faults to ensure accurate records.",
-        "Maintained asset tracking systems using Excel and AI tools to ensure operational efficiency.",
-        "Managed complex scheduling requiring clear communication and quick decision making."
-      ]
+        "Provided technical and operational support across a multi property portfolio",
+        "Maintained accurate digital asset and inventory tracking using Office 365 and Google Sheets",
+        "Troubleshot system and process issues to ensure data reliability",
+      ],
     },
     {
-      role: "Executive Chef / Operations Management",
-      company: "Various International & Local Establishments",
+      role: "Executive Chef / Operations Manager",
+      company: "Various Employers",
       location: "NZ & Thailand",
-      dates: "1995 - 2022",
+      dates: "1995 – 2022",
       description: [
-        "Led high performing teams in high pressure environments, achieving 95%+ satisfaction rates through logical problem solving.",
-        "Optimized internal processes to increase consistency and reduce waste in fast paced production settings.",
-      ]
-    }
+        "Led operations for up to 350+ pax, consistently meeting strict 15 minute service SLAs",
+        "Troubleshot onsite hardware issues including printers, network connectivity, and EFTPOS machines",
+        "Optimised workflows and maintained strong safety and documentation records",
+      ],
+    },
+  ],
+
+  education: [
+    "Software Development & Professional Skills – Take2 Programme (2024–Present)",
+    "Full Class 1 NZ Driver Licence | Own Reliable Transport",
+    "Forklift Certification – Counterbalance, Reach, Stock Picker (Jan 2026)",
   ],
 };
 
-// --- Utility Components ---
-const Icon = ({ path, className = "w-4 h-4" }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className={className}>
-    {path === 'mail' && <path d="M1.5 8.67v8.58a1.5 1.5 0 001.5 1.5h17a1.5 1.5 0 001.5-1.5V8.67l-8.88 5.06a.75.75 0 01-.76 0L1.5 8.67z" />}
-    {path === 'phone' && <path d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" />}
-    {path === 'code' && <path d="M11.03 3.97a.75.75 0 010 1.06l-6.22 6.22 6.22 6.22a.75.75 0 11-1.06 1.06l-6.75-6.75a.75.75 0 010-1.06l6.75-6.75a.75.75 0 011.06 0zm1.94 0a.75.75 0 000 1.06l6.22 6.22-6.22 6.22a.75.75 0 101.06 1.06l6.75-6.75a.75.75 0 000-1.06l-6.75-6.75a.75.75 0 00-1.06 0z" />}
-    {path === 'briefcase' && <path d="M7.5 5.25a3 3 0 013-3h3a3 3 0 013 3v.205c3.864.5 6.75 3.79 6.75 7.645v6.75a3 3 0 01-3 3h-15a3 3 0 01-3-3v-6.75c0-3.855 2.886-7.145 6.75-7.645V5.25z" />}
-    {path === 'github' && <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />}
+const Icon = ({ path, className }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    {path === 'mail' && <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/>}
+    {path === 'phone' && <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/>}
+    {path === 'github' && <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/>}
+    {path === 'code' && <path d="M16 18l2-2-2-2M8 6l-2 2 2 2M14.5 4l-5 16" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/>}
+    {path === 'briefcase' && <path d="M20 7l-2-2H6L4 7m16 0v10a2 2 0 01-2 2H6a2 2 0 01-2-2V7m16 0H4m6-3v4m4-4v4" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/>}
     {path === 'external' && <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/>}
-    {path === 'linkedin' && <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />}
-    {path === 'star' && <path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" />}
+    {path === 'linkedin' && <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" fill="currentColor"/>}
+    {path === 'star' && <path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/>}
   </svg>
 );
 
@@ -167,8 +169,8 @@ const ExperienceItem = ({ role, company, location, dates, description, isHighlig
   </div>
 );
 
-const TechCV = () => {
-  const { personal, summary, skills, experience, projects } = cvData;
+const TheInstilleryCV = () => {
+  const { personal, summary, skills, projects, experience, education } = cvData;
 
   return (
     <div className="min-h-screen bg-slate-100 p-4 sm:p-12 font-sans text-slate-900 print:bg-white print:p-0">
@@ -242,6 +244,15 @@ const TechCV = () => {
               ))}
             </div>
           </section>
+
+          <section>
+            <SectionTitle title="Education & Certifications" icon="star" />
+            <ul className="list-disc ml-6 text-slate-700 text-md space-y-2 print:text-sm print:ml-4 print:space-y-1">
+              {education.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ul>
+          </section>
         </main>
         
         <footer className="bg-slate-50 p-6 text-center text-sm text-slate-400 border-t border-slate-100 print:bg-white print:text-slate-500">
@@ -252,4 +263,4 @@ const TechCV = () => {
   );
 };
 
-export default TechCV;
+export default TheInstilleryCV;

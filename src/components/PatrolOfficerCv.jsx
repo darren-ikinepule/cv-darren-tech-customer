@@ -1,10 +1,10 @@
 import React from 'react';
 
-// --- Warehouse CV Data (Employer-Focused & Safety-First) ---
+// --- Updated CV Data (Tailored for Patrol Officer Role) ---
 const cvData = {
   personal: {
     name: "Darren Ikinepule",
-    title: "Warehouse Operative | Certified Forklift Operator",
+    title: "Operations & Site Management Professional",
     email: "darrenikinepule@outlook.co.nz",
     phone: "0204339983",
     location: "Auckland",
@@ -12,49 +12,37 @@ const cvData = {
   },
 
   summary: [
-    "Reliable warehouse operative with a strong safety focus and a proven work ethic. Certified forklift operator with experience working in high volume, fast paced environments where accuracy and teamwork are critical. Known for punctuality, physical stamina, and following procedures to ensure safe and efficient operations."
+    "Operations professional with extensive experience managing residential and commercial sites across Auckland. I have a track record of staying calm and solving problems in high pressure environments and am fully licensed to drive in NZ. Ready to commit to a 4 on, 4 off roster and provide professional, helpful support to venue visitors and staff."
   ],
 
   skills: {
     technical: [
-      "Forklift Certification (Jan 2026): Counterbalance (LPG), Reach Electric, Stock Picker, Pallet Truck",
-      "Health & Safety: Strong awareness with a long term zero incident record",
-      "Warehouse Operations: Picking, packing, pallet movement, and stock control",
-      "Inventory Accuracy: High attention to detail with digital and manual stock records"
+      "Site & Safety: Site Patrolling, Incident Response, Public Safety, Conflict Resolution, Professional Conduct, Full NZ Driver Licence",
+      "Administrative Systems: Confident use of Excel, digital records, asset tracking, and scheduling tools",
+      "Issue Resolution: Identifying problems quickly and following through to resolution",
+      "Technical Awareness: Troubleshooting operational tools and digital record systems"
     ],
     core: [
       { 
-        category: "Licences & Certifications", 
+        category: "Customer Service Strengths", 
         items: [
-          "Certified Forklift Operator – Jan 2026",
-          "Full Class 1 NZ Driver’s Licence (Own Transport)",
-          "Health & Safety Trained (High Volume Environments)"
+          "Maintained a 95%+ satisfaction rate by ensuring a professional, welcoming atmosphere in fast paced settings",
+          "Experienced in handling complaints, special requests, and time sensitive issues",
+          "Comfortable working with people from diverse backgrounds",
+          "Calm and respectful approach in stressful situations"
         ] 
       },
       { 
-        category: "Work Readiness", 
+        category: "Work Ethic & Reliability", 
         items: [
-          "Physically fit and capable of repetitive manual work",
-          "Reliable and punctual (comfortable with early starts)",
-          "Team focused with a strong follow the process mindset",
-          "Comfortable working under time pressure"
+          "Highly punctual, dependable, and consistent",
+          "Hands on approach with strong ownership of daily tasks",
+          "Experience with staff coordination and scheduling",
+          "Strong attention to detail with records, inventory, and compliance"
         ] 
-      }
-    ]
+      },
+    ],
   },
-
-  education: [
-    {
-      role: "Forklift Certification",
-      company: "Certified Training Provider",
-      location: "Auckland",
-      dates: "Jan 2026",
-      description: [
-        "Trained and assessed on Counterbalance (LPG), Reach, Stock Picker, and Pallet Truck operation.",
-        "Demonstrated safe load handling, hazard awareness, and efficient pallet movement."
-      ]
-    }
-  ],
 
   experience: [
     {
@@ -70,31 +58,46 @@ const cvData = {
       ]
     },
     {
-      role: "Property Manager / Logistics Support",
+      role: "Property Manager / Operations",
       company: "Gardenia Trust LTD",
       location: "Auckland",
-      dates: "10/2024 – Present",
+      dates: "2024 - 2026",
       description: [
-        "Handled warehouse style logistics, stock movement, and asset tracking across multiple sites.",
-        "Maintained accurate inventory records and ensured equipment was stored and tracked correctly.",
-        "Coordinated deliveries and maintenance schedules to minimise downtime."
+        "Responsible for patrolling and managing 7 residential and commercial properties, ensuring all sites stayed secure and well maintained.",
+        "Acted as the first point of contact for incidents, using clear communication to resolve issues for owners and tenants quickly.",
+        "Managed all site records and compliance documentation with high attention to detail.",
+        "Resolved operational and system issues to keep services running smoothly."
       ]
     },
     {
-      role: "Production & Operations Lead",
-      company: "Hospitality & Production Environments",
+      role: "Executive Chef / Service & Operations Management",
+      company: "Various Establishments",
       location: "New Zealand & Thailand",
-      dates: "2002 – 2022",
+      dates: "1995 – 2022",
       description: [
-        "Worked in high volume production environments requiring speed, accuracy, and safety awareness.",
-        "Handled repetitive physical tasks while maintaining consistent output and quality standards.",
-        "Followed strict health, safety, and hygiene procedures with zero incident record."
+        "Led teams of 15+ in high traffic environments, keeping operations running smoothly while managing public interactions.",
+        "Consistently achieved 95%+ customer satisfaction through quality control and team leadership.",
+        "Represented Hyatt Auckland, delivering consistent service standards across locations.",
+        "Trained in digital tools and workplace problem solving."
       ]
     }
-  ]
+  ],
+
+  education: [
+    {
+      role: "Professional Skills & Digital Tools Programme",
+      company: "Take2 Programme",
+      location: "Auckland",
+      dates: "2024",
+      description: [
+        "Completed a full time programme focused on professional workplace skills and modern digital tools.",
+        "Applied structured problem solving approaches to administration and task management."
+      ],
+    }
+  ],
 };
 
-// --- Components ---
+// --- Components (Layout Preserved) ---
 
 const Icon = ({ path, className = "w-4 h-4" }) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className={className}>
@@ -108,11 +111,11 @@ const Icon = ({ path, className = "w-4 h-4" }) => (
 );
 
 const Header = ({ personal }) => (
-  <header className="bg-slate-800 text-white px-8 py-6 rounded-t-lg shadow-xl border-b-4 border-blue-500 print:shadow-none print:px-0 print:py-6 print:bg-white print:text-slate-900 print:border-blue-600">
+  <header className="bg-slate-800 text-white px-8 py-6 rounded-t-lg shadow-xl border-b-4 border-emerald-500 print:shadow-none print:px-0 print:py-6 print:bg-white print:text-slate-900 print:border-emerald-600">
     <div className="flex flex-col md:flex-row justify-between items-start md:items-center print:flex-row print:items-center">
       <div>
         <h1 className="text-4xl font-extrabold tracking-tight print:text-3xl">{personal.name}</h1>
-        <p className="text-xl font-medium text-blue-400 mt-1 uppercase tracking-wider print:text-blue-700 print:text-lg">{personal.title}</p>
+        <p className="text-xl font-medium text-emerald-400 mt-1 uppercase tracking-wider print:text-emerald-700 print:text-lg">{personal.title}</p>
       </div>
       <div className="mt-4 md:mt-0 text-sm md:text-right space-y-1 print:mt-0 print:text-xs font-medium">
         <ContactItem icon="mail" text={personal.email} link={`mailto:${personal.email}`} />
@@ -126,9 +129,9 @@ const Header = ({ personal }) => (
 
 const ContactItem = ({ icon, text, link }) => (
   <div className="flex items-center space-x-2 justify-start md:justify-end">
-    <Icon path={icon} className="w-4 h-4 text-blue-400 print:text-blue-600 flex-shrink-0" />
+    <Icon path={icon} className="w-4 h-4 text-emerald-400 print:text-emerald-600 flex-shrink-0" />
     {link ? (
-      <a href={link} target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 transition duration-150 border-b border-transparent hover:border-blue-300">
+      <a href={link} target="_blank" rel="noopener noreferrer" className="hover:text-emerald-300 transition duration-150 border-b border-transparent hover:border-emerald-300">
         {text}
       </a>
     ) : (
@@ -139,18 +142,18 @@ const ContactItem = ({ icon, text, link }) => (
 
 const SectionTitle = ({ title, icon }) => (
   <h2 className="text-2xl font-bold border-b-2 border-slate-200 pb-2 mb-4 flex items-center space-x-2 text-slate-800 pt-8 print:pt-4 print:text-xl print:border-slate-300 break-after-avoid">
-    <Icon path={icon} className="w-6 h-6 text-blue-600 print:w-5 print:h-5" />
+    <Icon path={icon} className="w-6 h-6 text-emerald-600 print:w-5 print:h-5" />
     <span>{title}</span>
   </h2>
 );
 
 const ExperienceItem = ({ role, company, location, dates, description, isHighlight }) => (
-  <div className={`experience-item mb-5 p-5 rounded border break-inside-avoid print:mb-4 print:p-0 print:border-none ${isHighlight ? 'bg-blue-50 border-blue-200 print:bg-transparent' : 'bg-white border-slate-100 shadow-sm'}`}>
+  <div className={`experience-item mb-5 p-5 rounded border break-inside-avoid print:mb-4 print:p-0 print:border-none ${isHighlight ? 'bg-emerald-50 border-emerald-200 print:bg-transparent' : 'bg-white border-slate-100 shadow-sm'}`}>
     <div className="flex justify-between items-start print:mb-0.5">
       <h3 className="text-xl font-bold text-slate-900 print:text-lg">{role}</h3>
-      {dates && <span className="text-sm font-bold text-blue-700 bg-blue-100 px-3 py-1 rounded flex-shrink-0 print:bg-transparent print:px-0 print:py-0 print:text-slate-600">{dates}</span>}
+      {dates && <span className="text-sm font-bold text-emerald-700 bg-emerald-100 px-3 py-1 rounded flex-shrink-0 print:bg-transparent print:px-0 print:py-0 print:text-slate-600">{dates}</span>}
     </div>
-    <div className="flex justify-between items-center text-md text-slate-500 mb-3 print:mb-1 print:text-sm print:text-blue-800">
+    <div className="flex justify-between items-center text-md text-slate-500 mb-3 print:mb-1 print:text-sm print:text-emerald-800">
       <p className="font-bold">{company}</p>
       <p className="italic">{location}</p>
     </div>
@@ -162,8 +165,8 @@ const ExperienceItem = ({ role, company, location, dates, description, isHighlig
   </div>
 );
 
-const WarehouseLogisticsCv = () => {
-  const { personal, summary, skills, education, experience } = cvData;
+const PatrolOfficerCV = () => {
+  const { personal, summary, skills, experience, education } = cvData;
 
   return (
     <div className="min-h-screen bg-slate-100 p-4 sm:p-12 font-sans text-slate-900 print:bg-white print:p-0">
@@ -179,12 +182,12 @@ const WarehouseLogisticsCv = () => {
             </div>
           </section>
 
-          {/* Key Skills */}
+          {/* Skills & Strengths */}
           <section className="break-inside-avoid">
-            <SectionTitle title="Key Skills" icon="briefcase" />
+            <SectionTitle title="Skills & Strengths" icon="briefcase" />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 print:gap-8 print:grid-cols-2">
               <div>
-                <h3 className="text-lg font-bold text-slate-800 mb-3 uppercase tracking-tight print:text-sm">Technical & Operational</h3>
+                <h3 className="text-lg font-bold text-slate-800 mb-3 uppercase tracking-tight print:text-sm">Technical & Administrative</h3>
                 <ul className="list-disc ml-6 text-sm text-slate-700 space-y-2 print:text-xs print:ml-4 print:space-y-0.5">
                   {skills.technical.map((skill, i) => <li key={i}>{skill}</li>)}
                 </ul>
@@ -203,22 +206,22 @@ const WarehouseLogisticsCv = () => {
             </div>
           </section>
 
-          {/* Certifications & Education */}
-          <section>
-            <SectionTitle title="Certifications & Education" icon="star" />
-            <div className="space-y-4 print:space-y-3">
-              {education.map((item, index) => (
-                <ExperienceItem key={index} {...item} isHighlight={item.role.includes("Forklift")} />
-              ))}
-            </div>
-          </section>
-
           {/* Work History */}
           <section>
             <SectionTitle title="Work History" icon="briefcase" />
             <div className="space-y-4 print:space-y-3">
               {experience.map((job, index) => (
                 <ExperienceItem key={index} {...job} />
+              ))}
+            </div>
+          </section>
+
+          {/* Training & Education */}
+          <section>
+            <SectionTitle title="Training & Education" icon="star" />
+            <div className="space-y-4 print:space-y-3">
+              {education.map((item, index) => (
+                <ExperienceItem key={index} {...item} />
               ))}
             </div>
           </section>
@@ -232,4 +235,4 @@ const WarehouseLogisticsCv = () => {
   );
 };
 
-export default WarehouseLogisticsCv;
+export default PatrolOfficerCV;
