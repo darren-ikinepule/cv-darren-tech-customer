@@ -1,13 +1,18 @@
 import React from "react";
 
-import CustomerServiceCV from "./components/CustomerServiceCv";
+
+
+
+
+
+import JuniorTechCV from "./components/JuniorTechCv";
 
 
 
 const App = () => {
   return (
     <>
-      <CustomerServiceCV />
+      <JuniorTechCV/>
     </>
   );
 };
