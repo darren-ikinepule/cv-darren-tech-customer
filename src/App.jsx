@@ -5,14 +5,16 @@ import React from "react";
 
 
 
-import JuniorTechCV from "./components/JuniorTechCv";
+
+
+import CustomerCv from "./components/CustomerCv";
 
 
 
 const App = () => {
   return (
     <>
-      <JuniorTechCV/>
+      <CustomerCv/>
     </>
   );
 };
