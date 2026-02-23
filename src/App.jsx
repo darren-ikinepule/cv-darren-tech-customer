@@ -7,14 +7,14 @@ import React from "react";
 
 
 
-import CustomerCv from "./components/CustomerCv";
+import CustomerServiceDarrenCv from "./components/CustomerServiceDarrenCv";
 
 
 
 const App = () => {
   return (
     <>
-      <CustomerCv/>
+      <CustomerServiceDarrenCv/>
     </>
   );
 };
