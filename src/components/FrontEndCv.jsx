@@ -55,6 +55,18 @@ const cvData = {
   ],
   experience: [
     {
+      role: "Relief Chef / Operations (Contract)",
+      company: "TRN (The Recruitment Network)",
+      location: "Auckland",
+      dates: "2026 – Present",
+      description: [
+        "Managing kitchen operations and service delivery across various high pressure Auckland venues on short notice.",
+        "Ensuring site safety and compliance with strict health and security protocols in diverse environments.",
+        "Adapting quickly to new teams and site layouts while maintaining professional conduct and reliable service.",
+        "Responsible for equipment oversight and maintaining secure, orderly work zones."
+      ]
+    },
+    {
       role: "Property Manager / Operations",
       company: "Gardenia Trust LTD",
       location: "Auckland",

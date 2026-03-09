@@ -1,10 +1,11 @@
 import React from 'react';
 
-// --- Customer Service CV Data (Tailored for Stats NZ Data Wrangler) ---
+// --- Updated CV Data: Tailored for Logistics Team Leader at Sanitarium ---
 const cvData = {
   personal: {
     name: "Darren Ikinepule",
-    title: "Operations & Data Management Professional",
+    // Title updated to match the job ad
+    title: "Logistics Team Leader | Certified Forklift Operator",
     email: "darrenikinepule@outlook.co.nz",
     phone: "0204339983",
     location: "Auckland",
@@ -12,37 +13,59 @@ const cvData = {
   },
 
   summary: [
-    "Operations professional with a background in property management and hospitality leadership. Having recently finished the Take2 Digital Tools programme, I am moving into data focused work where I can use my experience in troubleshooting, record keeping, and working with stakeholders to support Stats NZ's data services."
+    "Certified Forklift Operator with over 20 years of experience in high volume production. Previously an Executive Chef, I have extensive experience managing staff schedules, approving pay runs, and enforcing strict food safety and WHS standards. I am a practical leader focused on keeping warehouse operations safe and efficient."
   ],
 
   skills: {
     technical: [
-      "Digital Records: High integrity maintenance of complex databases and compliance documentation",
-      "Asset Tracking: Coordinated logistics and resource management for residential and commercial portfolios",
-      "Technical Troubleshooting: Identifying and fixing operational system issues quickly to ensure continuity",
-      "Data Learning Path: Currently upskilling in SQL, React, and Power BI through structured training"
+      "Forklift Certification (Jan 2026): Counterbalance (LPG), Reach Electric, Stock Picker, Pallet Truck",
+      "WHS Leadership: Enforcing site safety and hazard awareness with a 20 year zero incident record",
+      "Logistics Systems: Competent with WMS, digital inventory tracking, and Microsoft Office",
+      "Compliance: Practical experience with HACCP and international service standards"
     ],
     core: [
       { 
-        category: "Stakeholder & Service", 
+        category: "Management & Leadership", 
         items: [
-          "Main point of contact for diverse stakeholders including government agencies and tradespeople",
-          "Proven record of 95%+ satisfaction through clear communication and reliability",
-          "Comfortable working with people from diverse backgrounds across Aotearoa",
-          "Calm and respectful approach when handling time sensitive or complex issues"
+          "Staff Scheduling & Roster Management",
+          "Pay Run Approval & Timecard Sign off",
+          "Team Onboarding & Safety Training",
+          "KPI Performance Tracking"
         ] 
       },
       { 
-        category: "Compliance & Reliability", 
+        category: "Licences & Education", 
         items: [
-          "Strong attention to detail with records, inventory, and legal compliance requirements",
-          "Strict adherence to health, security, and data sensitive protocols",
-          "Hands on approach with strong ownership of daily operational tasks",
-          "Highly punctual and dependable in high pressure, fast paced environments"
+          "Certified Forklift Operator – Jan 2026",
+          "Certificate in Computing (1 Year Program)",
+          "Full Class 1 NZ Driver's Licence (Own Transport)"
         ] 
-      },
-    ],
+      }
+    ]
   },
+
+  education: [
+    {
+      role: "Forklift Certification",
+      company: "Certified Training Provider",
+      location: "Auckland",
+      dates: "Jan 2026",
+      description: [
+        "Certified on Counterbalance (LPG), Reach, Stock Picker, and Pallet Truck operation.",
+        "Demonstrated safe load handling and hazard awareness in high pressure environments."
+      ]
+    },
+    {
+      role: "Certificate in Computing",
+      company: "Auckland Tertiary Provider",
+      location: "Auckland",
+      dates: "2025",
+      description: [
+        "Completed one year program focused on digital records and data management.",
+        "Applied skills to asset tracking and digital inventory systems."
+      ]
+    }
+  ],
 
   experience: [
     {
@@ -51,53 +74,36 @@ const cvData = {
       location: "Auckland",
       dates: "2026 – Present",
       description: [
-        "Managing operational service delivery across high pressure Auckland environments on short notice.",
-        "Ensuring site safety and strict adherence to health, security, and data sensitive protocols in diverse settings.",
-        "Adapting rapidly to new team structures and site layouts while maintaining professional conduct and reliable service.",
-        "Responsible for operational oversight and maintaining secure, orderly work zones to ensure service continuity."
+        "Managing site operations and keeping services running in busy Auckland venues.",
+        "Adapting quickly to new teams, site layouts, and strict safety protocols.",
+        "Ensuring compliance with specialized industrial cleaning and equipment safety standards."
       ]
     },
     {
-      role: "Property Manager / Operations",
+      role: "Property Manager / Logistics Support",
       company: "Gardenia Trust LTD",
       location: "Auckland",
       dates: "10/2024 – 2026",
       description: [
-        "Manage 7 residential and commercial properties, serving as the main contact for owners and tenants while keeping digital records and compliance documents accurate.",
-        "Maintain high integrity records and inventories, ensuring all data matches physical assets and legal requirements.",
-        "Resolve operational and system issues to keep essential services running smoothly across the Pacific region.",
-        "Coordinate with multiple external contractors and stakeholders to deliver on project timelines."
+        "Coordinated stock movement and site logistics to ensure zero operational downtime.",
+        "Managed digital inventory records to ensure equipment was tracked and stored correctly."
       ]
     },
     {
-      role: "Executive Chef / Service & Operations Management",
-      company: "Various Establishments",
-      location: "New Zealand & Thailand",
-      dates: "1995 – 2022",
+      role: "Production & Operations Lead (Executive Chef)",
+      company: "Hospitality & Production Environments",
+      location: "NZ & Thailand",
+      dates: "2002 – 2022",
       description: [
-        "Led teams of 15+ in busy service environments, using quality control to maintain a 95%+ satisfaction rate.",
-        "Found ways to make internal processes more efficient, reducing waste and improving overall team performance.",
-        "Represented Hyatt Auckland internationally, ensuring service standards were met across diverse geographical locations.",
-        "Managed inventory and supply chain data to ensure consistent delivery under high pressure conditions."
+        "Led full shift operations, including staff scheduling and signing off on hours for large teams.",
+        "Enforced rigorous HACCP and hygiene standards across international sites.",
+        "Maintained a 100% zero accident record over 20 years in fast paced production lines."
       ]
     }
-  ],
-
-  education: [
-    {
-      role: "Professional Skills & Digital Tools Programme",
-      company: "Take2 Programme",
-      location: "Auckland",
-      dates: "2024",
-      description: [
-        "Completed a full time course on professional workplace skills and digital tools, focusing on a structured approach to problem solving.",
-        "Applied modern digital tools to manage administrative tasks, data entry accuracy, and project workflows."
-      ],
-    }
-  ],
+  ]
 };
 
-// --- Components (Layout Preserved) ---
+// --- Components (Formatting and Layout remain exactly as requested) ---
 
 const Icon = ({ path, className = "w-4 h-4" }) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className={className}>
@@ -111,11 +117,11 @@ const Icon = ({ path, className = "w-4 h-4" }) => (
 );
 
 const Header = ({ personal }) => (
-  <header className="bg-slate-800 text-white px-8 py-6 rounded-t-lg shadow-xl border-b-4 border-emerald-500 print:shadow-none print:px-0 print:py-6 print:bg-white print:text-slate-900 print:border-emerald-600">
+  <header className="bg-slate-800 text-white px-8 py-6 rounded-t-lg shadow-xl border-b-4 border-blue-500 print:shadow-none print:px-0 print:py-6 print:bg-white print:text-slate-900 print:border-blue-600">
     <div className="flex flex-col md:flex-row justify-between items-start md:items-center print:flex-row print:items-center">
       <div>
         <h1 className="text-4xl font-extrabold tracking-tight print:text-3xl">{personal.name}</h1>
-        <p className="text-xl font-medium text-emerald-400 mt-1 uppercase tracking-wider print:text-emerald-700 print:text-lg">{personal.title}</p>
+        <p className="text-xl font-medium text-blue-400 mt-1 uppercase tracking-wider print:text-blue-700 print:text-lg">{personal.title}</p>
       </div>
       <div className="mt-4 md:mt-0 text-sm md:text-right space-y-1 print:mt-0 print:text-xs font-medium">
         <ContactItem icon="mail" text={personal.email} link={`mailto:${personal.email}`} />
@@ -129,9 +135,9 @@ const Header = ({ personal }) => (
 
 const ContactItem = ({ icon, text, link }) => (
   <div className="flex items-center space-x-2 justify-start md:justify-end">
-    <Icon path={icon} className="w-4 h-4 text-emerald-400 print:text-emerald-600 flex-shrink-0" />
+    <Icon path={icon} className="w-4 h-4 text-blue-400 print:text-blue-600 flex-shrink-0" />
     {link ? (
-      <a href={link} target="_blank" rel="noopener noreferrer" className="hover:text-emerald-300 transition duration-150 border-b border-transparent hover:border-emerald-300">
+      <a href={link} target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 transition duration-150 border-b border-transparent hover:border-blue-300 print:hover:text-blue-600">
         {text}
       </a>
     ) : (
@@ -142,18 +148,18 @@ const ContactItem = ({ icon, text, link }) => (
 
 const SectionTitle = ({ title, icon }) => (
   <h2 className="text-2xl font-bold border-b-2 border-slate-200 pb-2 mb-4 flex items-center space-x-2 text-slate-800 pt-8 print:pt-4 print:text-xl print:border-slate-300 break-after-avoid">
-    <Icon path={icon} className="w-6 h-6 text-emerald-600 print:w-5 print:h-5" />
+    <Icon path={icon} className="w-6 h-6 text-blue-600 print:w-5 print:h-5" />
     <span>{title}</span>
   </h2>
 );
 
 const ExperienceItem = ({ role, company, location, dates, description, isHighlight }) => (
-  <div className={`experience-item mb-5 p-5 rounded border break-inside-avoid print:mb-4 print:p-0 print:border-none ${isHighlight ? 'bg-emerald-50 border-emerald-200 print:bg-transparent' : 'bg-white border-slate-100 shadow-sm'}`}>
+  <div className={`experience-item mb-5 p-5 rounded border break-inside-avoid print:mb-4 print:p-0 print:border-none ${isHighlight ? 'bg-blue-50 border-blue-200 print:bg-transparent' : 'bg-white border-slate-100 shadow-sm'}`}>
     <div className="flex justify-between items-start print:mb-0.5">
       <h3 className="text-xl font-bold text-slate-900 print:text-lg">{role}</h3>
-      {dates && <span className="text-sm font-bold text-emerald-700 bg-emerald-100 px-3 py-1 rounded flex-shrink-0 print:bg-transparent print:px-0 print:py-0 print:text-slate-600">{dates}</span>}
+      {dates && <span className="text-sm font-bold text-blue-700 bg-blue-100 px-3 py-1 rounded flex-shrink-0 print:bg-transparent print:px-0 print:py-0 print:text-slate-600">{dates}</span>}
     </div>
-    <div className="flex justify-between items-center text-md text-slate-500 mb-3 print:mb-1 print:text-sm print:text-emerald-800">
+    <div className="flex justify-between items-center text-md text-slate-500 mb-3 print:mb-1 print:text-sm print:text-blue-800">
       <p className="font-bold">{company}</p>
       <p className="italic">{location}</p>
     </div>
@@ -165,8 +171,8 @@ const ExperienceItem = ({ role, company, location, dates, description, isHighlig
   </div>
 );
 
-const CustomerServiceCV = () => {
-  const { personal, summary, skills, experience, education } = cvData;
+const SanitariumLogisticsLeaderCV = () => {
+  const { personal, summary, skills, education, experience } = cvData;
 
   return (
     <div className="min-h-screen bg-slate-100 p-4 sm:p-12 font-sans text-slate-900 print:bg-white print:p-0">
@@ -174,7 +180,6 @@ const CustomerServiceCV = () => {
         <Header personal={personal} />
 
         <main className="p-8 md:p-12 print:p-0 print:pt-4">
-          {/* Professional Summary */}
           <section className="break-inside-avoid">
             <SectionTitle title="Professional Summary" icon="star" />
             <div className="text-slate-700 leading-relaxed text-lg print:text-sm print:leading-normal">
@@ -182,12 +187,11 @@ const CustomerServiceCV = () => {
             </div>
           </section>
 
-          {/* Skills & Strengths */}
           <section className="break-inside-avoid">
-            <SectionTitle title="Skills & Strengths" icon="briefcase" />
+            <SectionTitle title="Key Skills" icon="briefcase" />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 print:gap-8 print:grid-cols-2">
               <div>
-                <h3 className="text-lg font-bold text-slate-800 mb-3 uppercase tracking-tight print:text-sm">Technical & Administrative</h3>
+                <h3 className="text-lg font-bold text-slate-800 mb-3 uppercase tracking-tight print:text-sm">Technical & Operational</h3>
                 <ul className="list-disc ml-6 text-sm text-slate-700 space-y-2 print:text-xs print:ml-4 print:space-y-0.5">
                   {skills.technical.map((skill, i) => <li key={i}>{skill}</li>)}
                 </ul>
@@ -206,22 +210,20 @@ const CustomerServiceCV = () => {
             </div>
           </section>
 
-          {/* Work History */}
+          <section>
+            <SectionTitle title="Certifications & Education" icon="star" />
+            <div className="space-y-4 print:space-y-3">
+              {education.map((item, index) => (
+                <ExperienceItem key={index} {...item} isHighlight={item.role.includes("Forklift")} />
+              ))}
+            </div>
+          </section>
+
           <section>
             <SectionTitle title="Work History" icon="briefcase" />
             <div className="space-y-4 print:space-y-3">
               {experience.map((job, index) => (
                 <ExperienceItem key={index} {...job} />
-              ))}
-            </div>
-          </section>
-
-          {/* Training & Education */}
-          <section>
-            <SectionTitle title="Training & Education" icon="star" />
-            <div className="space-y-4 print:space-y-3">
-              {education.map((item, index) => (
-                <ExperienceItem key={index} {...item} />
               ))}
             </div>
           </section>
@@ -235,4 +237,4 @@ const CustomerServiceCV = () => {
   );
 };
 
-export default CustomerServiceCV;
+export default SanitariumLogisticsLeaderCV;

@@ -1,152 +1,109 @@
 import React from 'react';
 
-// --- Data Structure ---
-// Cleaned of all related text and placeholders
+// --- Warehouse CV Data (Employer-Focused & Safety-First) ---
 const cvData = {
   personal: {
     name: "Darren Ikinepule",
-    title: "Warehouse & Logistics | Certified Forklift Operator",
+    title: "Warehouse Operative | Certified Forklift Operator",
     email: "darrenikinepule@outlook.co.nz",
     phone: "0204339983",
-    location: "Auckland 1072",
+    location: "Auckland",
+    linkedin: "https://www.linkedin.com/in/darren-ikinepule-792914335/",
   },
+
   summary: [
-    "Reliable and energetic professional with a strong work ethic. I have recently completed my Forklift Certification (Jan 2026) to move my experience in high volume inventory management and customer service into the logistics sector. Known for staying calm under pressure, I am committed to accuracy, safety, and providing helpful service in a busy warehouse environment."
+    "Reliable warehouse operative with a strong safety focus and a proven work ethic. Certified forklift operator with experience working in high volume, fast paced environments where accuracy and teamwork are critical. Known for punctuality, physical stamina, and following procedures to ensure safe and efficient operations."
   ],
+
   skills: {
     technical: [
-      "Certified Forklift Operator (Jan 2026): Counter Balance (LPG), Reach Electric, Stock Picker, Pallet Truck",
-      "Warehouse Logistics & Stock Control: High accuracy asset tracking and inventory records for multi location portfolios",
-      "Operational Safety: Zero incident record across years of experience in high volume, fast paced environments",
+      "Forklift Certification (Jan 2026): Counterbalance (LPG), Reach Electric, Stock Picker, Pallet Truck",
+      "Health & Safety: Strong awareness with a long term zero incident record",
+      "Warehouse Operations: Picking, packing, pallet movement, and stock control",
+      "Inventory Accuracy: High attention to detail with digital and manual stock records"
     ],
     core: [
       { 
-        category: "Certifications & Qualifications", 
+        category: "Licences & Certifications", 
         items: [
-          "Full Class 1 NZ Driver's Licence (Own Reliable Transport)", 
-          "Certified Forklift Operator - Jan 2026 (Counter Balance, Reach, Stock Picker, Pallet Truck)", 
-          "Software Development and Professional Skills (Take2 Programme, 2024)"
+          "Certified Forklift Operator – Jan 2026",
+          "Full Class 1 NZ Driver’s Licence (Own Transport)",
+          "Health & Safety Trained (High Volume Environments)"
         ] 
       },
       { 
-        category: "Professional Skills", 
+        category: "Work Readiness", 
         items: [
-          "Reliability & Punctuality (Ready for 7am starts)", 
-          "High Physical Stamina & Safety Consciousness", 
-          "Team Collaboration & Leadership (15+ Staff)", 
-          "Inventory Management & Digital Asset Tracking"
+          "Physically fit and capable of repetitive manual work",
+          "Reliable and punctual (comfortable with early starts)",
+          "Team focused with a strong follow the process mindset",
+          "Comfortable working under time pressure"
         ] 
-      },
-    ],
-    personal: [
-      "Full Class 1 NZ Driver's Licence with private vehicle", 
-      "Strong team ethic and proactive, fast learner attitude", 
-      "Reliable, punctual, and physically fit for warehouse demands", 
-      "Excellent health and safety awareness (Zero Incidents)"
-    ],
+      }
+    ]
   },
+
   education: [
     {
       role: "Forklift Certification",
-      company: "Certified Training",
+      company: "Certified Training Provider",
       location: "Auckland",
       dates: "Jan 2026",
       description: [
-        "Completed training on Counter Balance (LPG), Reach Electric, Stock Picker Electric, and Pallet Truck Electric.",
-        "Focused on high safety standards and efficient pallet movement during practical assessment.",
-      ],
-    },
-    {
-      role: "Software Development and Professional Skills",
-      company: "Take2 Programme",
-      location: "Auckland",
-      dates: "2024 - Present",
-      description: [
-        "Full time project based learning focused on technical logic, professional communication, and digital tools.",
-        "Used digital tools and AI for process optimisation and problem solving.",
-      ],
-    },
-  ],
-  experience: [
-    {
-      role: "Property Manager",
-      company: "Gardenia Trust LTD",
-      location: "Auckland",
-      dates: "10/2024 - Present",
-      description: [
-        "Managed warehouse style logistics and detailed inventory for a seven property portfolio across NZ and the Pacific.",
-        "Ensured 100% accuracy in asset tracking and stock control using digital tools.",
-        "Organised comprehensive schedules for tradespeople to ensure efficient maintenance and repairs.",
-      ]
-    },
-    {
-      role: "Head Chef",
-      company: "Kohuora Cafe",
-      location: "Auckland",
-      dates: "05/2018 - 10/2022",
-      description: [
-        "Led high volume production standards in a fast paced environment, maintaining efficiency during high pressure periods.",
-        "Developed workflows that contributed to an 80% increase in daily volume.",
-      ]
-    },
-    {
-      role: "Gourmet Production Chef",
-      company: "Eat My Lunch",
-      location: "Auckland",
-      dates: "05/2016 - 05/2018",
-      description: [
-        "Maintained 99%+ quality standards and a clean safety record within high volume production environments.",
-        "Responsible for order accuracy and resolving customer special requests.",
-      ]
-    },
-    {
-      role: "Executive Chef",
-      company: "Chaweng Blue Lagoon Resort",
-      location: "Thailand",
-      dates: "01/2005 - 01/2015",
-      description: [
-        "Led and trained a diverse team of 15+ staff members.",
-        "Achieved 95%+ guest satisfaction through consistent quality improvement.",
-      ]
-    },
-    {
-      role: "Executive Sous Chef",
-      company: "Impiana Resort And Spa",
-      location: "Koh Samui, Thailand",
-      dates: "06/2002 - 06/2004",
-      description: [
-        "Managed high volume operational tasks requiring strong multi tasking skills.",
-        "Optimised internal processes to increase efficiency and reduce waste.",
+        "Trained and assessed on Counterbalance (LPG), Reach, Stock Picker, and Pallet Truck operation.",
+        "Demonstrated safe load handling, hazard awareness, and efficient pallet movement."
       ]
     }
   ],
+
+  experience: [
+    {
+      role: "Relief Chef / Operations (Contract)",
+      company: "TRN (The Recruitment Network)",
+      location: "Auckland",
+      dates: "2026 – Present",
+      description: [
+        "Managing kitchen operations and service delivery across various high pressure Auckland venues on short notice.",
+        "Ensuring site safety and compliance with strict health and security protocols in diverse environments.",
+        "Adapting quickly to new teams and site layouts while maintaining professional conduct and reliable service.",
+        "Responsible for equipment oversight and maintaining secure, orderly work zones."
+      ]
+    },
+    {
+      role: "Property Manager / Logistics Support",
+      company: "Gardenia Trust LTD",
+      location: "Auckland",
+      dates: "10/2024 – Present",
+      description: [
+        "Handled warehouse style logistics, stock movement, and asset tracking across multiple sites.",
+        "Maintained accurate inventory records and ensured equipment was stored and tracked correctly.",
+        "Coordinated deliveries and maintenance schedules to minimise downtime."
+      ]
+    },
+    {
+      role: "Production & Operations Lead",
+      company: "Hospitality & Production Environments",
+      location: "New Zealand & Thailand",
+      dates: "2002 – 2022",
+      description: [
+        "Worked in high volume production environments requiring speed, accuracy, and safety awareness.",
+        "Handled repetitive physical tasks while maintaining consistent output and quality standards.",
+        "Followed strict health, safety, and hygiene procedures with zero incident record."
+      ]
+    }
+  ]
 };
 
-// --- Utility Components ---
+// --- Components ---
 
 const Icon = ({ path, className = "w-4 h-4" }) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className={className}>
-    {path === 'mail' && (
-      <>
-        <path d="M1.5 8.67v8.58a1.5 1.5 0 001.5 1.5h17a1.5 1.5 0 001.5-1.5V8.67l-8.88 5.06a.75.75 0 01-.76 0L1.5 8.67z" />
-        <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
-      </>
-    )}
-    {path === 'phone' && (
-      <path fillRule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clipRule="evenodd" />
-    )}
-    {path === 'location' && (
-      <path fillRule="evenodd" d="M11.54 22.351l.07.04.28.16a1 1 0 001.22 0l.28-.16.07-.04a41.8 41.8 0 003.525-6.736c.2-.4.2-.9 0-1.3a41.8 41.8 0 00-3.525-6.736l-.07-.04a.75.75 0 00-.76 0l-.07.04a41.8 41.8 0 00-3.525 6.736c-.2.4-.2.9 0 1.3a41.8 41.8 0 003.525 6.736zm-1.04-6.601a3 3 0 114.5-4.5 3 3 0 01-4.5 4.5z" clipRule="evenodd" />
-    )}
-    {path === 'briefcase' && (
-      <path fillRule="evenodd" d="M7.5 5.25a3 3 0 013-3h3a3 3 0 013 3v.205c3.864.5 6.75 3.79 6.75 7.645v6.75a3 3 0 01-3 3h-15a3 3 0 01-3-3v-6.75c0-3.855 2.886-7.145 6.75-7.645V5.25zM15 6a1.5 1.5 0 00-1.5-1.5h-3A1.5 1.5 0 009 6v.205c3.864.5 6.75 3.79 6.75 7.645v6.75a1.5 1.5 0 01-1.5 1.5h-15a1.5 1.5 0 01-1.5-1.5v-6.75c0-3.855 2.886-7.145 6.75-7.645V6z" clipRule="evenodd" />
-    )}
-    {path === 'graduationCap' && (
-      <path fillRule="evenodd" d="M12 2.25a.75.75 0 01.75.75v1.5L15 4.5V4.75A.75.75 0 0115.75 5h1.5A.75.75 0 0118 5.75V7.5h.75A.75.75 0 0119.5 8.25v2.25a.75.75 0 01-.75.75H18v1.5a.75.75 0 01-1.5 0v-1.5H15V15a.75.75 0 01-.75.75h-3A.75.75 0 0110.5 15v-1.5H9v-1.5H7.5V9.75h-.75A.75.75 0 016 9V7.5a.75.75 0 01.75-.75H9V5.75A.75.75 0 019.75 5h1.5A.75.75 0 0112 5.75V9h1.5V6a.75.75 0 011.5 0v3h-1.5v1.5h1.5v-1.5H18v1.5h-.75A.75.75 0 0116.5 12v-1.5a.75.75 0 01.75-.75h1.5V9H18V7.5a.75.75 0 01-.75-.75H15V5.25A.75.75 0 0114.25 4.5H12V3A.75.75 0 0112 2.25z" clipRule="evenodd" />
-    )}
-    {path === 'star' && (
-      <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clipRule="evenodd" />
-    )}
+    {path === 'mail' && <path d="M1.5 8.67v8.58a1.5 1.5 0 001.5 1.5h17a1.5 1.5 0 001.5-1.5V8.67l-8.88 5.06a.75.75 0 01-.76 0L1.5 8.67z" />}
+    {path === 'phone' && <path d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" />}
+    {path === 'location' && <path d="M11.54 22.351l.07.04.28.16a1 1 0 001.22 0l.28-.16.07-.04a41.8 41.8 0 003.525-6.736c.2-.4.2-.9 0-1.3a41.8 41.8 0 00-3.525-6.736l-.07-.04a.75.75 0 00-.76 0l-.07.04a41.8 41.8 0 00-3.525 6.736c-.2.4-.2.9 0 1.3a41.8 41.8 0 003.525 6.736zm-1.04-6.601a3 3 0 114.5-4.5 3 3 0 01-4.5 4.5z" />}
+    {path === 'briefcase' && <path d="M7.5 5.25a3 3 0 013-3h3a3 3 0 013 3v.205c3.864.5 6.75 3.79 6.75 7.645v6.75a3 3 0 01-3 3h-15a3 3 0 01-3-3v-6.75c0-3.855 2.886-7.145 6.75-7.645V5.25z" />}
+    {path === 'linkedin' && <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />}
+    {path === 'star' && <path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" />}
   </svg>
 );
 
@@ -158,6 +115,7 @@ const Header = ({ personal }) => (
         <p className="text-xl font-medium text-blue-400 mt-1 uppercase tracking-wider print:text-blue-700 print:text-lg">{personal.title}</p>
       </div>
       <div className="mt-4 md:mt-0 text-sm md:text-right space-y-1 print:mt-0 print:text-xs font-medium">
+<<<<<<< HEAD
         <div className="flex items-center space-x-2 justify-start md:justify-end">
           <Icon path="mail" className="w-4 h-4 text-blue-400 print:text-blue-600" />
           <span>{personal.email}</span>
@@ -170,11 +128,33 @@ const Header = ({ personal }) => (
           <Icon path="location" className="w-4 h-4 text-blue-400 print:text-blue-600" />
           <span>{personal.location}</span>
         </div>
+=======
+        <ContactItem icon="mail" text={personal.email} link={`mailto:${personal.email}`} />
+        <ContactItem icon="phone" text={personal.phone} link={`tel:${personal.phone}`} />
+        <ContactItem icon="location" text={personal.location} />
+        <ContactItem icon="linkedin" text="LinkedIn" link={personal.linkedin} />
+>>>>>>> 806cff54906b1c0d44dbc4fbc40b5e4cbe68f5b8
       </div>
     </div>
   </header>
 );
 
+<<<<<<< HEAD
+=======
+const ContactItem = ({ icon, text, link }) => (
+  <div className="flex items-center space-x-2 justify-start md:justify-end">
+    <Icon path={icon} className="w-4 h-4 text-blue-400 print:text-blue-600 flex-shrink-0" />
+    {link ? (
+      <a href={link} target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 transition duration-150 border-b border-transparent hover:border-blue-300">
+        {text}
+      </a>
+    ) : (
+      <span>{text}</span>
+    )}
+  </div>
+);
+
+>>>>>>> 806cff54906b1c0d44dbc4fbc40b5e4cbe68f5b8
 const SectionTitle = ({ title, icon }) => (
   <h2 className="text-2xl font-bold border-b-2 border-slate-200 pb-2 mb-4 flex items-center space-x-2 text-slate-800 pt-8 print:pt-4 print:text-xl print:border-slate-300 break-after-avoid">
     <Icon path={icon} className="w-6 h-6 text-blue-600 print:w-5 print:h-5" />
@@ -186,21 +166,29 @@ const ExperienceItem = ({ role, company, location, dates, description, isHighlig
   <div className={`experience-item mb-5 p-5 rounded border break-inside-avoid print:mb-4 print:p-0 print:border-none ${isHighlight ? 'bg-blue-50 border-blue-200 print:bg-transparent' : 'bg-white border-slate-100 shadow-sm'}`}>
     <div className="flex justify-between items-start print:mb-0.5">
       <h3 className="text-xl font-bold text-slate-900 print:text-lg">{role}</h3>
+<<<<<<< HEAD
       <span className="text-sm font-bold text-blue-700 bg-blue-100 px-3 py-1 rounded flex-shrink-0 print:bg-transparent print:px-0 print:py-0 print:text-slate-600">{dates}</span>
+=======
+      {dates && <span className="text-sm font-bold text-blue-700 bg-blue-100 px-3 py-1 rounded flex-shrink-0 print:bg-transparent print:px-0 print:py-0 print:text-slate-600">{dates}</span>}
+>>>>>>> 806cff54906b1c0d44dbc4fbc40b5e4cbe68f5b8
     </div>
     <div className="flex justify-between items-center text-md text-slate-500 mb-3 print:mb-1 print:text-sm print:text-blue-800">
       <p className="font-bold">{company}</p>
       <p className="italic">{location}</p>
     </div>
     <ul className="list-disc ml-6 text-slate-700 text-md space-y-1.5 print:text-sm print:ml-4 print:space-y-1">
+<<<<<<< HEAD
       {description.map((point, index) => <li key={index}>{point}</li>)}
+=======
+      {description.map((point, index) => (
+        <li key={index}>{point}</li>
+      ))}
+>>>>>>> 806cff54906b1c0d44dbc4fbc40b5e4cbe68f5b8
     </ul>
   </div>
 );
 
-// --- Main App Component ---
-
-const WarehouseCv = () => {
+const WarehouseLogisticsCv = () => {
   const { personal, summary, skills, education, experience } = cvData;
 
   return (
@@ -209,6 +197,10 @@ const WarehouseCv = () => {
         <Header personal={personal} />
 
         <main className="p-8 md:p-12 print:p-0 print:pt-4">
+<<<<<<< HEAD
+=======
+          {/* Professional Summary */}
+>>>>>>> 806cff54906b1c0d44dbc4fbc40b5e4cbe68f5b8
           <section className="break-inside-avoid">
             <SectionTitle title="Professional Summary" icon="star" />
             <div className="text-slate-700 leading-relaxed text-lg print:text-sm print:leading-normal">
@@ -216,6 +208,7 @@ const WarehouseCv = () => {
             </div>
           </section>
 
+<<<<<<< HEAD
           <section className="break-inside-avoid">
             <SectionTitle title="Skills & Qualifications" icon="briefcase" />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 print:gap-8 print:grid-cols-2">
@@ -231,13 +224,28 @@ const WarehouseCv = () => {
                     {skills.personal.map((item, i) => <li key={i}>{item}</li>)}
                   </ul>
                 </div>
+=======
+          {/* Key Skills */}
+          <section className="break-inside-avoid">
+            <SectionTitle title="Key Skills" icon="briefcase" />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 print:gap-8 print:grid-cols-2">
+              <div>
+                <h3 className="text-lg font-bold text-slate-800 mb-3 uppercase tracking-tight print:text-sm">Technical & Operational</h3>
+                <ul className="list-disc ml-6 text-sm text-slate-700 space-y-2 print:text-xs print:ml-4 print:space-y-0.5">
+                  {skills.technical.map((skill, i) => <li key={i}>{skill}</li>)}
+                </ul>
+>>>>>>> 806cff54906b1c0d44dbc4fbc40b5e4cbe68f5b8
               </div>
 
               <div className="space-y-8 print:space-y-4">
                 {skills.core.map((section, index) => (
                   <div key={index}>
                     <h3 className="text-lg font-bold text-slate-800 mb-3 uppercase tracking-tight print:text-sm">{section.category}</h3>
+<<<<<<< HEAD
                     <ul className="list-disc ml-6 text-md text-slate-700 space-y-2 print:text-sm print:ml-4 print:space-y-1">
+=======
+                    <ul className="list-disc ml-6 text-sm text-slate-700 space-y-2 print:text-xs print:ml-4 print:space-y-0.5">
+>>>>>>> 806cff54906b1c0d44dbc4fbc40b5e4cbe68f5b8
                       {section.items.map((item, i) => <li key={i}>{item}</li>)}
                     </ul>
                   </div>
@@ -246,8 +254,14 @@ const WarehouseCv = () => {
             </div>
           </section>
 
+<<<<<<< HEAD
           <section>
             <SectionTitle title="Certifications & Education" icon="graduationCap" />
+=======
+          {/* Certifications & Education */}
+          <section>
+            <SectionTitle title="Certifications & Education" icon="star" />
+>>>>>>> 806cff54906b1c0d44dbc4fbc40b5e4cbe68f5b8
             <div className="space-y-4 print:space-y-3">
               {education.map((item, index) => (
                 <ExperienceItem key={index} {...item} isHighlight={item.role.includes("Forklift")} />
@@ -255,8 +269,14 @@ const WarehouseCv = () => {
             </div>
           </section>
 
+<<<<<<< HEAD
           <section>
             <SectionTitle title="Professional Experience" icon="briefcase" />
+=======
+          {/* Work History */}
+          <section>
+            <SectionTitle title="Work History" icon="briefcase" />
+>>>>>>> 806cff54906b1c0d44dbc4fbc40b5e4cbe68f5b8
             <div className="space-y-4 print:space-y-3">
               {experience.map((job, index) => (
                 <ExperienceItem key={index} {...job} />
@@ -264,7 +284,11 @@ const WarehouseCv = () => {
             </div>
           </section>
         </main>
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 806cff54906b1c0d44dbc4fbc40b5e4cbe68f5b8
         <footer className="bg-slate-50 p-6 text-center text-sm text-slate-400 border-t border-slate-100 print:bg-white print:text-slate-500">
           References available upon request.
         </footer>
@@ -273,4 +297,8 @@ const WarehouseCv = () => {
   );
 };
 
+<<<<<<< HEAD
 export default WarehouseCv;
+=======
+export default WarehouseLogisticsCv;
+>>>>>>> 806cff54906b1c0d44dbc4fbc40b5e4cbe68f5b8
