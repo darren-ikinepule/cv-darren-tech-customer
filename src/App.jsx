@@ -1,15 +1,12 @@
 import React from "react";
+import TrnNewCv from "./components/TrnNewCv";
+import SaleCv from "./components/SaleCv";
 
-
-import WarehouseLogisticsCv from "./components/WarehouseLogisticsCv";
-import CustomerServiceCv from "./components/CustomerServiceCv";
-import JuniorTechCv from "./components/JuniorTechCv";
 const App = () => {
   return (
     <>
-      <WarehouseLogisticsCv />
-      <CustomerServiceCv />
-      <JuniorTechCv />
+    <SaleCv />
+     <TrnNewCv />
     </>
   );
 };
