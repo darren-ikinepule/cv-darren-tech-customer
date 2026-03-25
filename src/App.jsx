@@ -1,12 +1,14 @@
 import React from "react";
 
-import ChefCv from "./components/ChefCv";
+import FrontEndCv from "./components/FrontEndCv";
+
 
 const App = () => {
   return (
     <>
      
-      <ChefCv />
+      
+      <FrontEndCv />
     </>
   );
 };
