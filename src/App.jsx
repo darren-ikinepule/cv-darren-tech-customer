@@ -1,6 +1,5 @@
 import React from "react";
-
-import FrontEndCv from "./components/FrontEndCv";
+import CustomerServiceDarrenCv from "./components/CustomerServiceDarrenCv";
 
 
 const App = () => {
@@ -8,7 +7,7 @@ const App = () => {
     <>
      
       
-      <FrontEndCv />
+      <CustomerServiceDarrenCv />
     </>
   );
 };
