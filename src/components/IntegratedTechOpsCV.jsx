@@ -3,7 +3,7 @@ import React from "react";
 const cvData = {
   personal: {
     name: "Darren Ikinepule",
-    title: "IT Support & Operations Professional",
+    title: "IT Support & Operations",
     email: "darrenikinepule@outlook.co.nz",
     phone: "0204339983",
     location: "Auckland 1072",

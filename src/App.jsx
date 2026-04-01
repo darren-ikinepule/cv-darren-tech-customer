@@ -1,15 +1,13 @@
 import React from "react";
-import ChefCv from "./components/ChefCv";
-
-
-
-
+import CustomerServiceDarrenCv from "./components/CustomerServiceDarrenCv";
 
 
 const App = () => {
   return (
     <>
-      <ChefCv/>
+     
+      
+      <CustomerServiceDarrenCv />
     </>
   );
 };

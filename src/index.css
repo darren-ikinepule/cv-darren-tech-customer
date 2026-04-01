@@ -16,3 +16,72 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #94a3b8;
 }
+
+/* Print Styles - 2 Page Maximum */
+@media print {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-size: 10px;
+    line-height: 1.3;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Page size constraints */
+  @page {
+    size: A4;
+    margin: 10mm;
+  }
+  
+  /* Prevent content overflow */
+  body > * {
+    page-break-inside: avoid;
+    overflow: hidden;
+  }
+  
+  /* Limit to 2 pages */
+  body {
+    max-height: 297mm; /* A4 height * 2 */
+    overflow: hidden;
+  }
+  
+  /* Hide scrollbars in print */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Avoid page breaks in key content */
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+  
+  p, li {
+    page-break-inside: avoid;
+    orphans: 2;
+    widows: 2;
+  }
+  
+  /* Compact spacing for print */
+  .space-y-2 {
+    margin-bottom: 4px !important;
+  }
+  
+  .space-y-4 {
+    margin-bottom: 6px !important;
+  }
+  
+  .mb-4 {
+    margin-bottom: 4px !important;
+  }
+  
+  .mb-6 {
+    margin-bottom: 6px !important;
+  }
+}

@@ -115,15 +115,32 @@ const Header = ({ personal }) => (
         <p className="text-xl font-medium text-blue-400 mt-1 uppercase tracking-wider print:text-blue-700 print:text-lg">{personal.title}</p>
       </div>
       <div className="mt-4 md:mt-0 text-sm md:text-right space-y-1 print:mt-0 print:text-xs font-medium">
+<<<<<<< HEAD
+        <div className="flex items-center space-x-2 justify-start md:justify-end">
+          <Icon path="mail" className="w-4 h-4 text-blue-400 print:text-blue-600" />
+          <span>{personal.email}</span>
+        </div>
+        <div className="flex items-center space-x-2 justify-start md:justify-end">
+          <Icon path="phone" className="w-4 h-4 text-blue-400 print:text-blue-600" />
+          <span>{personal.phone}</span>
+        </div>
+        <div className="flex items-center space-x-2 justify-start md:justify-end">
+          <Icon path="location" className="w-4 h-4 text-blue-400 print:text-blue-600" />
+          <span>{personal.location}</span>
+        </div>
+=======
         <ContactItem icon="mail" text={personal.email} link={`mailto:${personal.email}`} />
         <ContactItem icon="phone" text={personal.phone} link={`tel:${personal.phone}`} />
         <ContactItem icon="location" text={personal.location} />
         <ContactItem icon="linkedin" text="LinkedIn" link={personal.linkedin} />
+>>>>>>> 806cff54906b1c0d44dbc4fbc40b5e4cbe68f5b8
       </div>
     </div>
   </header>
 );
 
+<<<<<<< HEAD
+=======
 const ContactItem = ({ icon, text, link }) => (
   <div className="flex items-center space-x-2 justify-start md:justify-end">
     <Icon path={icon} className="w-4 h-4 text-blue-400 print:text-blue-600 flex-shrink-0" />
@@ -137,6 +154,7 @@ const ContactItem = ({ icon, text, link }) => (
   </div>
 );
 
+>>>>>>> 806cff54906b1c0d44dbc4fbc40b5e4cbe68f5b8
 const SectionTitle = ({ title, icon }) => (
   <h2 className="text-2xl font-bold border-b-2 border-slate-200 pb-2 mb-4 flex items-center space-x-2 text-slate-800 pt-8 print:pt-4 print:text-xl print:border-slate-300 break-after-avoid">
     <Icon path={icon} className="w-6 h-6 text-blue-600 print:w-5 print:h-5" />
@@ -148,16 +166,24 @@ const ExperienceItem = ({ role, company, location, dates, description, isHighlig
   <div className={`experience-item mb-5 p-5 rounded border break-inside-avoid print:mb-4 print:p-0 print:border-none ${isHighlight ? 'bg-blue-50 border-blue-200 print:bg-transparent' : 'bg-white border-slate-100 shadow-sm'}`}>
     <div className="flex justify-between items-start print:mb-0.5">
       <h3 className="text-xl font-bold text-slate-900 print:text-lg">{role}</h3>
+<<<<<<< HEAD
+      <span className="text-sm font-bold text-blue-700 bg-blue-100 px-3 py-1 rounded flex-shrink-0 print:bg-transparent print:px-0 print:py-0 print:text-slate-600">{dates}</span>
+=======
       {dates && <span className="text-sm font-bold text-blue-700 bg-blue-100 px-3 py-1 rounded flex-shrink-0 print:bg-transparent print:px-0 print:py-0 print:text-slate-600">{dates}</span>}
+>>>>>>> 806cff54906b1c0d44dbc4fbc40b5e4cbe68f5b8
     </div>
     <div className="flex justify-between items-center text-md text-slate-500 mb-3 print:mb-1 print:text-sm print:text-blue-800">
       <p className="font-bold">{company}</p>
       <p className="italic">{location}</p>
     </div>
     <ul className="list-disc ml-6 text-slate-700 text-md space-y-1.5 print:text-sm print:ml-4 print:space-y-1">
+<<<<<<< HEAD
+      {description.map((point, index) => <li key={index}>{point}</li>)}
+=======
       {description.map((point, index) => (
         <li key={index}>{point}</li>
       ))}
+>>>>>>> 806cff54906b1c0d44dbc4fbc40b5e4cbe68f5b8
     </ul>
   </div>
 );
@@ -171,7 +197,10 @@ const WarehouseLogisticsCv = () => {
         <Header personal={personal} />
 
         <main className="p-8 md:p-12 print:p-0 print:pt-4">
+<<<<<<< HEAD
+=======
           {/* Professional Summary */}
+>>>>>>> 806cff54906b1c0d44dbc4fbc40b5e4cbe68f5b8
           <section className="break-inside-avoid">
             <SectionTitle title="Professional Summary" icon="star" />
             <div className="text-slate-700 leading-relaxed text-lg print:text-sm print:leading-normal">
@@ -179,6 +208,23 @@ const WarehouseLogisticsCv = () => {
             </div>
           </section>
 
+<<<<<<< HEAD
+          <section className="break-inside-avoid">
+            <SectionTitle title="Skills & Qualifications" icon="briefcase" />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 print:gap-8 print:grid-cols-2">
+              <div>
+                <h3 className="text-lg font-bold text-slate-800 mb-3 uppercase tracking-tight print:text-sm">Technical Proficiency</h3>
+                <ul className="list-disc ml-6 text-md text-slate-700 space-y-2 print:text-sm print:ml-4 print:space-y-1">
+                  {skills.technical.map((skill, i) => <li key={i}>{skill}</li>)}
+                </ul>
+
+                <div className="mt-6 print:mt-4">
+                  <h3 className="text-lg font-bold text-slate-800 mb-3 uppercase tracking-tight print:text-sm">Personal Attributes</h3>
+                  <ul className="list-disc ml-6 text-md text-slate-700 space-y-2 print:text-sm print:ml-4 print:space-y-1">
+                    {skills.personal.map((item, i) => <li key={i}>{item}</li>)}
+                  </ul>
+                </div>
+=======
           {/* Key Skills */}
           <section className="break-inside-avoid">
             <SectionTitle title="Key Skills" icon="briefcase" />
@@ -188,13 +234,18 @@ const WarehouseLogisticsCv = () => {
                 <ul className="list-disc ml-6 text-sm text-slate-700 space-y-2 print:text-xs print:ml-4 print:space-y-0.5">
                   {skills.technical.map((skill, i) => <li key={i}>{skill}</li>)}
                 </ul>
+>>>>>>> 806cff54906b1c0d44dbc4fbc40b5e4cbe68f5b8
               </div>
 
               <div className="space-y-8 print:space-y-4">
                 {skills.core.map((section, index) => (
                   <div key={index}>
                     <h3 className="text-lg font-bold text-slate-800 mb-3 uppercase tracking-tight print:text-sm">{section.category}</h3>
+<<<<<<< HEAD
+                    <ul className="list-disc ml-6 text-md text-slate-700 space-y-2 print:text-sm print:ml-4 print:space-y-1">
+=======
                     <ul className="list-disc ml-6 text-sm text-slate-700 space-y-2 print:text-xs print:ml-4 print:space-y-0.5">
+>>>>>>> 806cff54906b1c0d44dbc4fbc40b5e4cbe68f5b8
                       {section.items.map((item, i) => <li key={i}>{item}</li>)}
                     </ul>
                   </div>
@@ -203,9 +254,14 @@ const WarehouseLogisticsCv = () => {
             </div>
           </section>
 
+<<<<<<< HEAD
+          <section>
+            <SectionTitle title="Certifications & Education" icon="graduationCap" />
+=======
           {/* Certifications & Education */}
           <section>
             <SectionTitle title="Certifications & Education" icon="star" />
+>>>>>>> 806cff54906b1c0d44dbc4fbc40b5e4cbe68f5b8
             <div className="space-y-4 print:space-y-3">
               {education.map((item, index) => (
                 <ExperienceItem key={index} {...item} isHighlight={item.role.includes("Forklift")} />
@@ -213,9 +269,14 @@ const WarehouseLogisticsCv = () => {
             </div>
           </section>
 
+<<<<<<< HEAD
+          <section>
+            <SectionTitle title="Professional Experience" icon="briefcase" />
+=======
           {/* Work History */}
           <section>
             <SectionTitle title="Work History" icon="briefcase" />
+>>>>>>> 806cff54906b1c0d44dbc4fbc40b5e4cbe68f5b8
             <div className="space-y-4 print:space-y-3">
               {experience.map((job, index) => (
                 <ExperienceItem key={index} {...job} />
@@ -223,7 +284,11 @@ const WarehouseLogisticsCv = () => {
             </div>
           </section>
         </main>
+<<<<<<< HEAD
+        
+=======
 
+>>>>>>> 806cff54906b1c0d44dbc4fbc40b5e4cbe68f5b8
         <footer className="bg-slate-50 p-6 text-center text-sm text-slate-400 border-t border-slate-100 print:bg-white print:text-slate-500">
           References available upon request.
         </footer>
@@ -232,4 +297,8 @@ const WarehouseLogisticsCv = () => {
   );
 };
 
+<<<<<<< HEAD
+export default WarehouseCv;
+=======
 export default WarehouseLogisticsCv;
+>>>>>>> 806cff54906b1c0d44dbc4fbc40b5e4cbe68f5b8
