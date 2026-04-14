@@ -176,7 +176,7 @@ const ExperienceItem = ({ role, company, location, dates, description, highlight
 );
 
 // --- Main Component ---
-const ItCV = () => {
+const ItCv = () => {
   const { personal, summary, skills, experience, education, projects } = cvData;
 
   return (
@@ -247,4 +247,4 @@ const ItCV = () => {
   );
 };
 
-export default ItCV;
+export default ItCv;

@@ -169,7 +169,7 @@ const ExperienceItem = ({ role, company, location, dates, description, isHighlig
   </div>
 );
 
-const IntegratedTechOpsCV = () => {
+const IntegratedTechOpsCv = () => {
   const { personal, summary, skills, projects, experience, education } = cvData;
 
   return (
@@ -263,4 +263,4 @@ const IntegratedTechOpsCV = () => {
   );
 };
 
-export default IntegratedTechOpsCV;
+export default IntegratedTechOpsCv;

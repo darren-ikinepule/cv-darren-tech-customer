@@ -1,5 +1,9 @@
 import React from "react";
-import CustomerServiceDarrenCv from "./components/CustomerServiceDarrenCv";
+
+
+
+import MasterCv from "./components/MasterCv";
+
 
 
 const App = () => {
@@ -7,7 +11,7 @@ const App = () => {
     <>
      
       
-      <CustomerServiceDarrenCv />
+      <MasterCv />
     </>
   );
 };

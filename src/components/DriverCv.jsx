@@ -1,14 +1,14 @@
 import React from "react";
 
 // ==============================
-// TAILORED CV DATA - AUCKLAND TRANSPORT
+// TAILORED CV DATA
 // ==============================
 
 const cvData = {
   personal: {
     name: "Darren Ikinepule",
     title:
-      "Customer Service & Operations Specialist | Certified Forklift Operator (F Endorsed)",
+      "Driver | Operations & Logistics Support",
     email: "darrenikinepule@outlook.co.nz",
     phone: "0204339983",
     location: "Auckland, New Zealand",
@@ -17,31 +17,49 @@ const cvData = {
   },
 
   summary: [
-    "I have spent over 20 years managing daily operations and leading teams in some of Auckland’s most demanding environments. My background in hospitality and property management has built a practical, customer first mindset focused on solving problems as they arise.",
-    "I am comfortable working with a wide range of people and stay calm under pressure, with a goal of providing clear, helpful support to every person using our transport network."
+    "I am an Auckland based professional with over 30 years of clean driving experience and a lifelong commitment to safety. My personal experience supporting family members with Down syndrome and physical disabilities has given me the patience and care needed for SESTA (Specialised School Transport Assistance).",
+    "I offer a zero incident safety record and a customer first mindset, dedicated to providing reliable, safe, and supportive transport for students and families in the South Auckland community."
   ],
 
   skillGroups: [
     {
-      title: "Customer & Community Support",
+      title: "Driving & Safety",
       skills: [
-        "Conflict Resolution & De escalation",
-        "Public Interaction",
-        "End to End Problem Solving",
-        "Interpersonal Communication",
-        "Team Leadership (15+ Staff)",
-        "Operational Safety & Compliance",
+        "Full NZ Driver’s Licence (30+ Years)",
+        "Zero-Incident Safety Record",
+        "SESTA Support Experience",
+        "Physically Fit & Reliable",
+        "Willing to obtain Passenger Endorsement",
       ],
     },
     {
       title: "Operations & Logistics",
       skills: [
-        "Forklift Operator (F Endorsed)",
-        "Inventory Management",
+        "Certified Forklift Operator (F Endorsed)",
+        "Inventory Management & Stock Control",
         "Workflow Coordination",
-        "Resource Procurement",
-        "Asset Tracking",
-        "Digital Tool Proficiency",
+        "Logistics Support",
+        "Digital Record Keeping",
+      ],
+    },
+    {
+      title: "Leadership & Care",
+      skills: [
+        "Team Leadership (15+ Staff)",
+        "Patient & Clear Communication",
+        "Operational Supervision",
+        "Conflict Resolution",
+        "Staff Training & Mentorship",
+      ],
+    },
+    {
+      title: "Compliance",
+      skills: [
+        "Health & Safety Compliance",
+        "Workplace Safety Procedures",
+        "Food Safety Level 3 Certified",
+        "Quality Control Systems",
+        "Zero Incident Safety Record",
       ],
     },
   ],
@@ -54,9 +72,9 @@ const cvData = {
       dates: "2026 – Present",
       highlight: true,
       description: [
-        "Quickly adapt to different teams and high pressure environments across Auckland, maintaining high standards of service and safety during peak times.",
-        "Manage operational workflows at multiple sites to ensure efficient service delivery and workplace organization.",
-        "Maintain strict health, safety, and compliance standards in fast paced settings.",
+        "Managing daily schedules with high reliability and punctuality across multiple Auckland sites.",
+        "Maintaining a 100% clean safety and compliance record in fast paced operational environments.",
+        "Quickly adapting to new teams and protocols while ensuring organized workplace operations.",
       ],
     },
     {
@@ -65,10 +83,10 @@ const cvData = {
       location: "Auckland",
       dates: "10/2024 – 2026",
       description: [
-        "Serve as the primary point of contact for a diverse range of owners and tenants, resolving service and system issues quickly to keep operations running smoothly.",
-        "Maintain high integrity records and compliance documents, ensuring data accuracy for residential and commercial assets.",
-        "Coordinate with external contractors and stakeholders to meet project timelines and essential service requirements.",
-      ]
+        "Managed property records and tenant communications with high reliability and attention to detail.",
+        "Maintained high integrity records and inventories to ensure compliance with NZ legal requirements.",
+        "Coordinated with multiple external contractors and stakeholders to deliver on strict timelines.",
+      ],
     },
     {
       role: "Head Chef / Operations Leader",
@@ -76,51 +94,41 @@ const cvData = {
       location: "Auckland",
       dates: "05/2018 – 10/2022",
       description: [
-        "Took full responsibility for staff and workflow in a high volume setting, ensuring the team stayed focused on providing a positive experience for every customer.",
-        "Led recruitment, training, and performance management for a diverse frontline team.",
-        "Improved operational efficiency to manage increased production volumes while maintaining safety standards.",
+        "Supervised daily operations for teams of 15+, maintaining a calm, patient environment and clear communication during busy periods.",
+        "Improved operational efficiency while strictly maintaining safety and health standards.",
       ],
     },
     {
-      role: "Executive Chef / Operations Manager",
-      company: "Chaweng Blue Lagoon Resort",
-      location: "Thailand",
-      dates: "01/2005 – 01/2015",
+      role: "International Operations Management",
+      company: "Various Resorts (Hyatt, Impiana, Blue Lagoon)",
+      location: "Thailand / International",
+      dates: "1995 – 2015",
       description: [
-        "Managed end to end operational workflows, including logistics, staffing, and inventory for high volume service outlets.",
-        "Supervised a team of 15+ staff, focusing on consistent service quality and operational planning.",
-      ],
-    },
-    {
-      role: "Executive Sous Chef",
-      company: "Hyatt Hotel / Impiana Resort",
-      location: "Auckland & International",
-      dates: "11/1995 – 01/2005",
-      description: [
-        "Selected to represent Hyatt Hotels Corporation internationally, upholding brand standards and operational excellence across global locations.",
-        "Managed high volume production (250–350 covers daily) and service operations in luxury hotel environments.",
+        "Led high-volume operational workflows and large teams across diverse global locations.",
+        "Represented Hyatt Hotels internationally, upholding premium brand standards for safety and reliability.",
+        "Managed complex logistics and procurement under high-pressure scenarios.",
       ],
     },
   ],
 
   education: [
     {
+      title: "Full NZ Driver’s Licence",
+      provider: "NZ Transport Agency",
+      date: "30+ Years",
+      details: "Clean driving record. Fully compliant and ready for Passenger (P) Endorsement support.",
+    },
+    {
       title: "Forklift Certification with F Endorsement",
       provider: "Certified Training Provider",
       date: "Jan 2026",
-      details: "Fully compliant with NZ safety standards for Reach Truck, Counterbalance, and Stock Pickers.",
+      details: "Counterbalance, Reach Truck, Stock Picker, and Pallet Truck. Fully compliant with NZ safety standards.",
     },
     {
       title: "Professional Skills & Digital Tools Programme",
       provider: "Take2 Programme",
       date: "2024",
-      details: "Training in digital systems, workplace workflows, and operational efficiency.",
-    },
-    {
-      title: "Food Safety Certificate (Level 3)",
-      provider: "NZQA",
-      date: "Current",
-      details: "Advanced compliance and safety certification.",
+      details: "Digital systems, workplace workflows, and operational training.",
     },
   ],
 };
@@ -199,7 +207,7 @@ const ExperienceItem = ({ role, company, location, dates, description, highlight
 // MAIN COMPONENT
 // ==============================
 
-const CustomerCv = () => {
+const DriverCv = () => {
   const { personal, summary, skillGroups, experience, education } = cvData;
 
   return (
@@ -267,4 +275,4 @@ const CustomerCv = () => {
   );
 };
 
-export default CustomerCv;
+export default DriverCv;

@@ -245,7 +245,7 @@ const SkillBadge = ({ text }) => (
   </span>
 );
 
-const ChefCV = () => {
+const ChefCv = () => {
   const { personal, summary, skills, experience } = cvData;
 
   return (
@@ -338,4 +338,4 @@ const ChefCV = () => {
   );
 };
 
-export default ChefCV;
+export default ChefCv;

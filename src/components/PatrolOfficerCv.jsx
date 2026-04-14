@@ -165,7 +165,7 @@ const ExperienceItem = ({ role, company, location, dates, description, isHighlig
   </div>
 );
 
-const PatrolOfficerCV = () => {
+const PatrolOfficerCv = () => {
   const { personal, summary, skills, experience, education } = cvData;
 
   return (
@@ -235,4 +235,4 @@ const PatrolOfficerCV = () => {
   );
 };
 
-export default PatrolOfficerCV;
+export default PatrolOfficerCv;

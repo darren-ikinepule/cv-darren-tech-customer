@@ -11,7 +11,7 @@ const cvData = {
     linkedin: "https://www.linkedin.com/in/darren-ikinepule-792914335/",
   },
   summary: [
-    "Reliable Warehouse Storeperson and newly Certified Forklift Operator (Jan 2026) with a zero incident safety record. Proven ability to lead teams of 17+ in high pressure environments while maintaining 100% punctuality for 7am starts. Physically fit and highly organised, offering expert level asset tracking skills using Excel and Gemini to ensure operational accuracy."
+    "Reliable Warehouse Storeperson and newly Certified Forklift Operator (Jan 2026) with a zero incident safety record. Proven ability to lead teams of 17+ in high pressure environments while maintaining 100% punctuality for early starts. Physically fit and highly organised, offering expert level asset tracking skills using Excel and Gemini to ensure operational accuracy."
   ],
   skills: {
     technical: [
@@ -31,7 +31,7 @@ const cvData = {
       { 
         category: "Professional Skills", 
         items: [
-          "100% Punctuality & Reliability (7am Start Ready)", 
+          "100% Punctuality & Reliability (Early Start Ready)", 
           "High Physical Stamina & Safety Consciousness", 
           "Team Leadership (15+ Staff) & Collaboration", 
           "Inventory Management & Digital Asset Tracking"

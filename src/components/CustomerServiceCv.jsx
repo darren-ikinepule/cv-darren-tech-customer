@@ -165,7 +165,7 @@ const ExperienceItem = ({ role, company, location, dates, description, isHighlig
   </div>
 );
 
-const CustomerServiceCV = () => {
+const CustomerServiceCv = () => {
   const { personal, summary, skills, experience, education } = cvData;
 
   return (
@@ -235,4 +235,4 @@ const CustomerServiceCV = () => {
   );
 };
 
-export default CustomerServiceCV;
+export default CustomerServiceCv;

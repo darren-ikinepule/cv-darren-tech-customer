@@ -269,7 +269,7 @@ const ExperienceItem = ({ role, company, location, dates, description, highlight
 // MAIN COMPONENT
 // ==============================
 
-const MasterCV = () => {
+const MasterCv = () => {
   const { personal, summary, skillGroups, experience, education } = cvData;
 
   return (
@@ -337,4 +337,4 @@ const MasterCV = () => {
   );
 };
 
-export default MasterCV;
+export default MasterCv;

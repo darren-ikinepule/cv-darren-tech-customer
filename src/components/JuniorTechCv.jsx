@@ -185,7 +185,7 @@ const Section = ({ title, children }) => (
   </section>
 );
 
-const JuniorTechCV = () => {
+const JuniorTechCv = () => {
   const { personal, summary, skills, education, experience, project } = cvData;
 
   return (
@@ -280,4 +280,4 @@ const JuniorTechCV = () => {
   );
 };
 
-export default JuniorTechCV;
+export default JuniorTechCv;
