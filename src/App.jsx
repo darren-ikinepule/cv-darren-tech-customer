@@ -2,7 +2,8 @@ import React from "react";
 
 
 
-import MasterCv from "./components/MasterCv";
+
+import WarehouseCv from "./components/WarehouseCv";
 
 
 
@@ -11,7 +12,7 @@ const App = () => {
     <>
      
       
-      <MasterCv />
+      <WarehouseCv />
     </>
   );
 };
