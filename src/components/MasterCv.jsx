@@ -330,7 +330,7 @@ const MasterCv = () => {
         </main>
 
         <footer className="bg-slate-50 p-6 text-center text-sm text-slate-400 border-t border-slate-100 print:bg-white print:text-slate-500 print:p-0 print:text-xs">
-          References available upon request.
+         
         </footer>
       </div>
     </div>
